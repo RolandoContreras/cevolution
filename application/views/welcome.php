@@ -66,7 +66,7 @@
             <div class="wpb_wrapper">
               <header class="section-title text-center hero-header">
                 <h1>Muy Pronto<br/><strong>CEVOLUTION WEB</strong></h1>
-                <p style="color: #e5e5e5; font-size: 20px;"><?php echo replace_vocales_voculeshtml("Empresa de marketing digital que te ayudará a hacer tus sueños realidad.");?></p>
+                <p style="color: #e5e5e5; font-size: 20px;"><?php echo replace_vocales_voculeshtml("Agencia de marketing digital que te ayudará a hacer tus sueños realidad.");?></p>
                 <div class="clearfix" style="padding:20px;"></div>
                 <img src="<?php echo site_url().'static/page_front/images/logo/logo_white.png'?>" srcset="<?php echo site_url().'static/page_front/images/logo/logo.png'?> 2x" width="300" alt="logo" />
               </header>

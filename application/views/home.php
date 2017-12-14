@@ -252,9 +252,7 @@
               <div class="wpb_single_image wpb_content_element vc_align_right">
                 <div class="wpb_wrapper">
                   <div class="vc_single_image-wrapper vc_box_border_grey">
-                      <img width="595" height="479" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/helmet1-10-1-6.jpg" class="vc_single_image-img attachment-full"
-                      alt="" srcset="http://demo.startuplywp.com/wp-content/uploads/2014/09/helmet1-10-1-6.jpg 595w, http://demo.startuplywp.com/wp-content/uploads/2014/09/helmet1-10-1-6-300x242.jpg 300w"
-                      sizes="(max-width: 595px) 100vw, 595px" /></div>
+                      <img width="595" height="479" src="<?php echo site_url().'static/page_front/images/branding.jpg';?>" class="vc_single_image-img attachment-full" alt="branding" srcset="<?php echo site_url().'static/page_front/images/branding.jpg';?> 595w, <?php echo site_url().'static/page_front/images/brandingx300.jpg';?> 300w" sizes="(max-width: 595px) 100vw, 595px" /></div>
                 </div>
               </div>
             </div>
@@ -596,7 +594,7 @@
         <div class="vc_col-sm-12 wpb_column column_container ">
           <div class="wpb_wrapper">
             <header class="section-title text-center ">
-              <h2>Our <strong>Awwards</strong></h2>
+              <h2>Marcas <strong>Realizadas</strong></h2>
             </header>
             <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
             <div class="vsc_content_slider wpb_content_element" data-pagination="false" data-arrows="true"
@@ -609,8 +607,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="180" height="29" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-41-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/3t.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -619,8 +617,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="105" height="30" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-51-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/jaquemente.png';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -629,8 +627,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="109" height="30" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-11-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/cevolution.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -639,8 +637,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="106" height="34" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-21-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/empire.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -653,8 +651,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="106" height="34" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-21-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/bitshare.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -663,8 +661,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="109" height="30" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-11-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="109" height="30" src="<?php echo site_url().'static/page_front/images/brand/criptowin.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -673,8 +671,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="105" height="30" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-51-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/c_m.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -683,8 +681,8 @@
                         <div class="wpb_wrapper">
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
-                              <div class="vc_single_image-wrapper vc_box_border_grey"><img width="180" height="29" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/logo-41-10-1-6.png" class="vc_single_image-img attachment-full"
-                                  alt="" /></div>
+                              <div class="vc_single_image-wrapper vc_box_border_grey">
+                                  <img width="180" height="29" src="<?php echo site_url().'static/page_front/images/brand/bca.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -703,16 +701,9 @@
         <div class="vc_col-sm-12 wpb_column column_container ">
           <div class="wpb_wrapper">
             <header class="section-title text-center ">
-              <h2>Our <strong>Works</strong></h2>
+              <h2>Nuestros <strong>Trabajos</strong></h2>
             </header>
             <div class="vivaco-grid" id="gridwrapper_our" data-token="pGROJ">
-              <div class="options">
-                <ul id="filters" class="option-set" data-option-key="filter">
-                  <li><a class="btn btn-outline-color selected" href="#filter" data-option-value="*">All</a></li>
-                  <li><a class="btn btn-outline-color" href="#filter" data-option-value=".26">Branding</a></li>
-                  <li><a class="btn btn-outline-color" href="#filter" data-option-value=".34">Illustrations</a></li>
-                </ul>
-              </div>
               <div class="space"></div>
               <div class="portfolio-wrapper">
                 <ul class="portfolio grid isotope grid_our">

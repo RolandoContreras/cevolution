@@ -97,14 +97,18 @@
                             if($_SESSION['usercms']['privilage'] == 3){ ?>
                                 <div class="accordion-group">
                                     <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#activaciones">
-                                        Activaciones
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#secciones">
+                                        Secciones
                                         </a>
                                     </div>
-                                    <div id="activaciones" class="accordion-body collapse">
+                                    <div id="secciones" class="accordion-body collapse">
                                       <div class="accordion-inner">
                                         <ul class="nav nav-list">
-                                             <li><a href="<?php echo site_url()."dashboard/activaciones";?>"><i class="icon-large icon-th"></i>Activaciones</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/about";?>"><i class="icon-large icon-th"></i>Acerca</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/product";?>"><i class="icon-large icon-th"></i>Productos</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/customer";?>"><i class="icon-large icon-th"></i>Clientes</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/brand";?>"><i class="icon-large icon-th"></i>Marcas</a></li>
+                                            <li><a href="<?php echo site_url()."dashboard/work";?>"><i class="icon-large icon-th"></i>Trabajos</a></li>
                                         </ul>
                                         </div>
                                     </div>

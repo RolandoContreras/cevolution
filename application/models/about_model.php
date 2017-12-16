@@ -1,7 +1,7 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed"); 
 /*****
 * Generator Class MC v.1.55
-* WAVELINE S.A.C.
+BITSHARE S.A.C
 * Proyecto
 * V. 1.0
 * Iniciado: 29/09/2015
@@ -12,30 +12,34 @@
 * @EXTIENDE EL MODELO
 * Descripcion: se utilizara para nuevas funciones
 * Creador: Rolando Contreras H.
-* Fecha: 29/09/2015
+* Fecha: 16/11/2016
 ****/
 
-class paises_model_atributos{	
-    var $id='';
-    var $id_idioma='';
-    var $nombre='';
-    var $x='';
-    var $y='';
+class about_model_atributos{	
+    var $about_id='';
+    var $name='';
+    var $title='';
+    var $text='';
+    var $status_value='';
 }
 
-class Paises_Model extends CI_Model{ 
+class About_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'paises';
-	$this->table_id = 'id';
-        $this->id='';
-	$this->id_idioma='';
-        $this->nombre='';
-        $this->x='';
-        $this->y='';
-	$this->fields = new paises_model_atributos();
+        $this->table = 'about';
+	$this->table_id = 'about_id';
+        $this->about_id='';
+        $this->name='';
+        $this->title='';
+        $this->text='';
+	$this->status_value='';
+	$this->fields = new about_model_atributos();
     }   
+    
+    public function fields(){
+    }
+    
     public function insert($data){
       $this->db->insert($this->table, $data);
       return $this->db->insert_id();
@@ -116,5 +120,14 @@ class Paises_Model extends CI_Model{
         $dato = $query->row();
         return $dato;       
   }
+  
+   public function verificar_username($username,$password){        
+        $this->db->where('$username',$username);
+        $this->db->where('password', $password);
+        $this->db->from($this->table);
+        $query = $this->db->get();                     
+        return $query->row();        
+   }
+  
 } //FIN DEL MODELO EXTENDIDO
 ?>

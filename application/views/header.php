@@ -20,7 +20,7 @@
                   <li id="menu-item-4739" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4739"><a title="ABOUT" href="#about">ACERCA</a></li>
                   <li id="menu-item-4740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4740"><a title="FEATURES" href="#features">CARACTERÍSTICAS</a></li>
                   <li id="menu-item-4741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4741"><a title="PRICES" href="#prices">PRICES</a></li>
-                  <li id="menu-item-4744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4744"><a title="FEEDBACK" href="#feedback">FEEDBACK</a></li>
+                  <li id="menu-item-4744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4744"><a title="FEEDBACK" href="#feedback">CLIENTES</a></li>
                   <li id="menu-item-4745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4745"><a title="CONTACTS" href="#contacts">CONTACTO</a></li>
                 </ul>
               </div>

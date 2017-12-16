@@ -95,6 +95,10 @@ $route['dashboard/panel'] = "panel";
 $route['dashboard/panel/guardar_btc'] = "panel/guardar_btc";
 $route['dashboard/panel/masive_messages'] = "panel/masive_messages";
 
+//SECTION
+$route['dashboard/about'] = "d_about";
+
+//END SECTION
 $route['dashboard/clientes'] = "d_customer";
 $route['dashboard/financiados'] = "d_customer/financiados";
 $route['dashboard/clientes/active_customer'] = "d_customer/active_customer";

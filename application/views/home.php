@@ -61,29 +61,35 @@
                 <div class="vc_tta-tabs-container">
                   <ul class="vc_tta-tabs-list">
                     <li class="vc_tta-tab vc_active" data-vc-tab>
-                        <a href="#1458817902749-1a00dfcb-8910" data-vc-tabs data-vc-container=".vc_tta">
-                            <i class="fa fa-certificate fa-3x" aria-hidden="true"></i><br/><br/><span class="vc_tta-title-text">ACERCA</span>
+                        <a href="#acerca" data-vc-tabs data-vc-container=".vc_tta">
+                            <i class="fa fa-certificate fa-3x" aria-hidden="true"></i>
+                            <br/><br/>
+                            <span class="vc_tta-title-text"><?php echo $name_about;?></span>
                         </a>
                     </li>
-                    <li
-                        class="vc_tta-tab" data-vc-tab>
-                        <a href="#1458817895902-425b7e93-3308" data-vc-tabs data-vc-container=".vc_tta">
-                            <i class="fa fa-certificate fa-3x" aria-hidden="true"></i><br/><br/><span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml("VISIÓN");?></span>
+                    <li class="vc_tta-tab" data-vc-tab>
+                        <a href="#vision" data-vc-tabs data-vc-container=".vc_tta">
+                            <i class="fa fa-certificate fa-3x" aria-hidden="true"></i>
+                            <br/><br/>
+                            <span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml($name_vision);?></span>
                         </a>
                     </li>
                       <li
-                        class="vc_tta-tab" data-vc-tab><a href="#1458817895316-b2b87512-ce3c" data-vc-tabs data-vc-container=".vc_tta">
-                              <i class="fa fa-certificate fa-3x" aria-hidden="true"></i><br/><br/><span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml("MISIÓN");?></span>
+                        class="vc_tta-tab" data-vc-tab>
+                          <a href="#mision" data-vc-tabs data-vc-container=".vc_tta">
+                              <i class="fa fa-certificate fa-3x" aria-hidden="true"></i>
+                              <br/><br/>
+                              <span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml($name_mision);?></span>
                           </a>
                       </li>
                   </ul>
                 </div>
                 <div class="vc_tta-panels-container">
                   <div class="vc_tta-panels">
-                    <div class="vc_tta-panel vc_active" id="1458817902749-1a00dfcb-8910" data-vc-content=".vc_tta-panel-body">
+                    <div class="vc_tta-panel vc_active" id="acerca" data-vc-content=".vc_tta-panel-body">
                       <div class="vc_tta-panel-heading">
                         <h4 class="vc_tta-panel-title">
-                            <a href="#1458817902749-1a00dfcb-8910" data-vc-accordion data-vc-container=".vc_tta-container">Acerca</a>
+                            <a href="#acerca" data-vc-accordion data-vc-container=".vc_tta-container">Acerca</a>
                         </h4>
                       </div>
                       <div class="vc_tta-panel-body">
@@ -107,12 +113,12 @@
                               <div class="wpb_wrapper">
                                 <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
                                 <header class="section-title ">
-                                    <h2><?php echo replace_vocales_voculeshtml("¿Qué es");?> <strong>CEVOLUTION?</strong></h2>
+                                    <h2><?php echo replace_vocales_voculeshtml($title_about);?></h2>
                                 </header>
                                 <div class="wpb_text_column wpb_content_element ">
                                   <div class="wpb_wrapper">
                                     <div class="wpb_text_column-text-style">
-                                        <p><?php echo replace_vocales_voculeshtml("Somos una agencia de marketing digital que te impulsa a hacer tus sueños realidad. <br/>Con un equipo de profesionales altamente especializados en el rubro de construcción de software multinivel, tradicional y posicionamiento de marcas nos permitimos asesorar a nuestros clientes para que tengan éxito en su proyecto.<br/> Y a la vez somos la primera agencia de marketing a nivel internacional que acepta bitcoin.");?></p>
+                                        <p><?php echo replace_vocales_voculeshtml($text_about);?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -123,10 +129,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="vc_tta-panel" id="1458817895902-425b7e93-3308" data-vc-content=".vc_tta-panel-body">
+                    <div class="vc_tta-panel" id="vision" data-vc-content=".vc_tta-panel-body">
                       <div class="vc_tta-panel-heading">
                         <h4 class="vc_tta-panel-title">
-                            <a href="#1458817895902-425b7e93-3308" data-vc-accordion data-vc-container=".vc_tta-container"><i class="vc_tta-icon vc_li vc_li-shop"></i><span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml("Visión")?></span></a>
+                            <a href="#vision" data-vc-accordion data-vc-container=".vc_tta-container"><i class="vc_tta-icon vc_li vc_li-shop"></i>
+                                <span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml("Visión")?></span></a>
                         </h4>
                       </div>
                       <div class="vc_tta-panel-body">
@@ -136,16 +143,9 @@
                               <div class="wpb_wrapper">
                                 <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
                                 <header class="section-title text-right ">
-                                    <h2>Nuestra <strong><?php echo replace_vocales_voculeshtml("Visión");?></strong></h2>
-                                  <p><?php echo replace_vocales_voculeshtml("Ser la agencia líder en marketing digital en todo Iberoamérica,  diferenciarnos con la calidad de nuestro servicios, el amor y la pasión hacia clientes.");?></p>
+                                    <h2><?php echo replace_vocales_voculeshtml($title_vision);?></strong></h2>
+                                  <p><?php echo replace_vocales_voculeshtml($text_vision);?></p>
                                 </header>
-                                <div class="wpb_text_column wpb_content_element ">
-                                  <div class="wpb_wrapper">
-                                    <div class="wpb_text_column-text-style" style="">
-                                      <p style="text-align: right;">Y a la vez posicionarnos como la primera agencia de marketing a nivel internacional en aceptar criptomonedas.</p>
-                                    </div>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
@@ -165,9 +165,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="vc_tta-panel" id="1458817895316-b2b87512-ce3c" data-vc-content=".vc_tta-panel-body">
+                    <div class="vc_tta-panel" id="mision" data-vc-content=".vc_tta-panel-body">
                       <div class="vc_tta-panel-heading">
-                        <h4 class="vc_tta-panel-title"><a href="#1458817895316-b2b87512-ce3c" data-vc-accordion data-vc-container=".vc_tta-container"><i class="vc_tta-icon vc_li vc_li-settings"></i><span class="vc_tta-title-text">For Developers</span></a></h4>
+                        <h4 class="vc_tta-panel-title">
+                            <a href="#mision" data-vc-accordion data-vc-container=".vc_tta-container">
+                                <i class="vc_tta-icon vc_li vc_li-settings"></i>
+                                <span class="vc_tta-title-text"><?php echo replace_vocales_voculeshtml("Misión");?></span>
+                            </a>
+                        </h4>
                       </div>
                       <div class="vc_tta-panel-body">
                         <div id="vsc_row_gvgiywuinl" class=" vc_row wpb_row vc_inner vc_row-fluid dark container" style="" data-token="IR6wU">
@@ -175,13 +180,13 @@
                             <div class="wpb_wrapper">
                               <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
                               <header class="section-title text-center ">
-                                <h2><strong>Nuestra </strong><?php echo replace_vocales_voculeshtml("Misión");?></h2>
+                                  <h2><?php echo replace_vocales_voculeshtml($title_mision);?></h2>
                               </header>
                               <div class='wpb_animate_when_almost_visible gambit-css-animation size-grow-2d' style='-webkit-animation-duration: 0.7s;-moz-animation-duration: 0.7s;-ms-animation-duration: 0.7s;-o-animation-duration: 0.7s;animation-duration: 0.7s'>
                                 <div class="wpb_text_column wpb_content_element ">
                                   <div class="wpb_wrapper">
                                     <div class="wpb_text_column-text-style" style="">
-                                      <p style="text-align: center;">Es generar y crear soluciones integrales en comunicación, publicidad, marketing y construcciones web; nos adecuamos a las necesidades del cliente y de esta manera logramos el éxito en cada trabajo que desarrollamos con el profesionalismo, pasión y seriedad.</p>
+                                        <p style="text-align: center;"><?php echo replace_vocales_voculeshtml($text_mision);?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -314,8 +319,8 @@
                           <a href="#tab-1411507545405-2-5" data-toggle="tab" class="heading-font">
                             <div class="tab-info has-icon">
                               <div class='tab-icon'><i class='vc_icon_element-icon icon icon-seo-icons-27'></i></div>
-                              <div class="tab-title">Responsive design</div>
-                              <div class="tab-subtitle tab-desc">Ability to turn of responsive feature for default browsing</div>
+                              <div class="tab-title"><?php echo replace_vocales_voculeshtml("Diseño Adaptable");?></div>
+                                <div class="tab-subtitle tab-desc"><?php echo replace_vocales_voculeshtml("Diseño adaptable (responsive) que se acomoda perfectamente a cualquier tipo de dispositivos pixel por pixel.");?></div>
                             </div>
                           </a>
                         </li>
@@ -363,6 +368,7 @@
           </div>
         </div>
       </div>
+      <!--START FEATURES-->
       <div id="vsc_row_yirdnsjnld" class=" vc_row wpb_row vc_inner vc_row-fluid vc_custom_1423845168912 dark container" style="" data-token="38oyK">
         <div class="vc_col-sm-12 wpb_column column_container ">
           <div class="wpb_wrapper">
@@ -373,8 +379,8 @@
                     <article style="" class="vsc-text-icon clearfix icon-top icon-single icon-round icon-border-solid">
                       <div class="vsc-service-icon"><i class="icon icon-office-44" style=""></i></div>
                       <div class="vsc-service-content">
-                        <h5>Easy Install</h5>
-                        <p>Setup and installations takes up to twenty seconds and a few clicks and with demo content it&#8217;s even simpler</p>
+                          <h5><?php echo replace_vocales_voculeshtml("Soporte Técnico GRATIS");?></h5>
+                          <p><?php echo replace_vocales_voculeshtml("Atención y soporte técnico gratis e ilimitada por la duración del contrato.");?></p>
                       </div>
                     </article>
                   </div>
@@ -395,8 +401,8 @@
                     <article style="" class="vsc-text-icon clearfix icon-top icon-single icon-round icon-border-solid">
                       <div class="vsc-service-icon"><i class="icon icon-seo-icons-27" style=""></i></div>
                       <div class="vsc-service-content">
-                        <h5>Responsive</h5>
-                        <p>Perfect for any device with pixel-perfect design and ability to turn off responsive feature for default browsing</p>
+                        <h5><?php echo replace_vocales_voculeshtml("Diseño Adaptable");?></h5>
+                        <p><?php echo replace_vocales_voculeshtml("Diseño adaptable (responsive) que se acomoda perfectamente a cualquier tipo de dispositivos pixel por pixel.");?></p>
                       </div>
                     </article>
                   </div>
@@ -406,8 +412,8 @@
                     <article style="" class="vsc-text-icon clearfix icon-top icon-single icon-round icon-border-solid">
                       <div class="vsc-service-icon"><i class="icon icon-office-24" style=""></i></div>
                       <div class="vsc-service-content">
-                        <h5>Time saver</h5>
-                        <p>It takes few minutes to setup professional looking startup website. But spend more time to make it unique</p>
+                        <h5>24/7</h5>
+                        <p><?php echo replace_vocales_voculeshtml("Soporte técnico con nuestros profesionales las 24 horas los 7 días de la semana.");?></p>
                       </div>
                     </article>
                   </div>
@@ -455,8 +461,8 @@
                     <article style="" class="vsc-text-icon clearfix icon-top icon-single icon-round icon-border-solid">
                       <div class="vsc-service-icon"><i class="icon icon-badges-votes-16" style=""></i></div>
                       <div class="vsc-service-content">
-                        <h5>Five Stars</h5>
-                        <p>Our customer support have been rated five stars, because we know that every issue have a solution</p>
+                        <h5>Cinco Estrellas</h5>
+                        <p><?php echo replace_vocales_voculeshtml("Todos nuestros clientes tiene un servicio cinco estrellas, porque nosotros tenemos una solución para cualquier tipo de problema");?></p>
                       </div>
                     </article>
                   </div>
@@ -466,8 +472,8 @@
           </div>
         </div>
       </div>
-      <div id="vsc_row_iozvrhkqix" class=" vc_row wpb_row vc_inner vc_row-fluid vc_custom_1424792145739 light row" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2017/02/startuply_bg.jpg);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;"
-        data-token="hJvF7">
+      <!--END FEATURES-->
+      <div id="vsc_row_iozvrhkqix" class=" vc_row wpb_row vc_inner vc_row-fluid vc_custom_1424792145739 light row" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2017/02/startuply_bg.jpg);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;" data-token="hJvF7">
         <div class="container">
           <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-right' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s'>
             <div class="vc_col-sm-5 wpb_column column_container ">
@@ -508,8 +514,7 @@
           </div>
         </div>
       </div>
-    <div id="feedback" class="parallax vc_row wpb_row vc_inner vc_row-fluid light row" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2017/03/testimonials_bg.jpg);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;"
-      data-token="D3vV0">
+    <div id="feedback" class="parallax vc_row wpb_row vc_inner vc_row-fluid light row" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2017/03/testimonials_bg.jpg);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;" 
       <div class='wpb_animate_when_almost_visible gambit-css-animation fade-in' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s'>
         <div class="vc_col-sm-12 wpb_column column_container ">
           <div class="wpb_wrapper">
@@ -517,7 +522,7 @@
               <div class="container">
                 <div class="row">
                   <div class="section-header">
-                    <h2>What <strong>Clients</strong> Say</h2>
+                    <h2>¿Qué dicen  <strong>nuestros</strong> clientes?</h2>
                   </div>
                   <div class="section-content">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -563,24 +568,21 @@
                   <div class="col-xs-12 col-md-10 col-md-offset-1">
                     <div class="flex-manual">
                       <div data-href="83" class="col-xs-12 col-sm-4">
-                        <div class="switch"><img width="140" height="140" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Jason-e14120140639411-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image"
-                            alt="Jason" />
-                          <div class="content"><span class="testimonial-name">JASON PETTERSON</span><span class="testimonial-position">Investor at Pear Inc.</span></div>
+                        <div class="switch"><img width="140" height="140" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Jason-e14120140639411-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image" alt="Jason"/>
+                          <div class="content"><span class="testimonial-name">Representante</span><span class="testimonial-position">Inversiones Bitshare SAC.</span></div>
                         </div>
                       </div>
                       <div data-href="82" class="col-xs-12 col-sm-4">
-                        <div class="switch"><img width="141" height="141" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Marcus-e14120140881701-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image"
-                            alt="Marcus" />
-                          <div class="content"><span class="testimonial-name">MARCUS BLIFFORD</span><span class="testimonial-position">VP Marketing at Footbook</span></div>
+                        <div class="switch"><img width="141" height="141" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Marcus-e14120140881701-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image" alt="Marcus"/>
+                          <div class="content"><span class="testimonial-name">Silene Carrasco</span><span class="testimonial-position">Fundadora 3T Company</span></div>
                         </div>
                       </div>
                       <div data-href="80" class="col-xs-12 col-sm-4">
-                        <div class="switch"><img width="142" height="142" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Hellen-e14120140355041-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image"
-                            alt="Hellen" />
-                          <div class="content"><span class="testimonial-name">HELLEN LEE</span><span class="testimonial-position">Accountant at Vell Inc.</span></div>
+                        <div class="switch"><img width="142" height="142" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Hellen-e14120140355041-10-1-6.png" class="testimonials-avatar sm-pic img-circle pull-left wp-post-image" alt="Hellen"/>
+                          <div class="content"><span class="testimonial-name">Sergio Urbina</span><span class="testimonial-position">Fundador Empire</span></div>
                         </div>
                       </div>
-                    </div>
+4                    </div>
                   </div>
                 </div>
               </div>
@@ -608,7 +610,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/3t.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/3t_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -618,7 +620,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/jaquemente.png';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/jaquemente_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -628,7 +630,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/cevolution.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/cevolution_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -638,7 +640,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/empire.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
+                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/empire_bn.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -652,7 +654,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/bitshare.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
+                                  <img width="106" height="34" src="<?php echo site_url().'static/page_front/images/brand/bitshare_bn.jpg';?>" class="vc_single_image-img attachment-full"  alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -662,7 +664,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="109" height="30" src="<?php echo site_url().'static/page_front/images/brand/criptowin.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="109" height="30" src="<?php echo site_url().'static/page_front/images/brand/criptowin_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -672,7 +674,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/c_m.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/c_m_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -682,7 +684,7 @@
                           <div class="wpb_single_image wpb_content_element vc_align_center">
                             <div class="wpb_wrapper">
                               <div class="vc_single_image-wrapper vc_box_border_grey">
-                                  <img width="180" height="29" src="<?php echo site_url().'static/page_front/images/brand/bca.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
+                                  <img width="105" height="30" src="<?php echo site_url().'static/page_front/images/brand/bca_bn.jpg';?>" class="vc_single_image-img attachment-full" alt="" /></div>
                             </div>
                           </div>
                         </div>
@@ -707,104 +709,96 @@
               <div class="space"></div>
               <div class="portfolio-wrapper">
                 <ul class="portfolio grid isotope grid_our">
-                  <li class="grid-item 26 item-small">
-                    <a class="portfolio" href="http://demo.startuplywp.com/portfolio/andrea-alvarez/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
-                      <div
-                        class="grid-item-on-hover wave-mouseover" data-color="">
-                        <div class="grid-child">
-                          <div class="grid-text-title">
-                            <h3 class="grid-item-title">Andrea Alvarez Branding</h3>
-                          </div>
-                          <div class="grid-text-subtitle"><span class="grid-item-subtitle">Branding</span></div>
-                        </div>
-                        <div class="helper"></div>
-              </div>
-              </a>
-              </li>
-              <li class="grid-item 26 item-small">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/fast-facts/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/fast_facts1-10-1-6.png" width="600" height="338" alt="" />
-                  <div class="grid-item-on-hover wave-mouseover"
-                    data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">Fast Facts Branding</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Branding</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="grid-item 26 item-small">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/russianornaments/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/048__044-10-1-6.png" width="1255" height="1234" alt="" />
-                  <div class="grid-item-on-hover wave-mouseover"
-                    data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">Russian Ornaments</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Branding</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="grid-item 34 item-high">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/icons/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/icon_cover-10-1-6.jpg" width="600" height="849" alt="" />
-                  <div class="grid-item-on-hover wave-mouseover"
-                    data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">Icons</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Illustrations</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="grid-item 26 34 item-small">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/igepa/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/Insect51-10-1-6.jpg" width="600" height="450" alt="" />
-                  <div class="grid-item-on-hover wave-mouseover"
-                    data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">IGEPA&#8217;s recycled world</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Branding, Illustrations</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="grid-item 34 item-small">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/evvvy/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/11-10-1-6.png" width="390" height="300" alt="" />
-                  <div class="grid-item-on-hover wave-mouseover"
-                    data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">Evvvy illustration</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Illustrations</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="grid-item 34 item-long">
-                <a class="portfolio" href="http://demo.startuplywp.com/portfolio/annoying-behavoir/"><img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/7fc6c5934ce0b5f53fc5cc22d3264d161-10-1-6.jpg" width="900" height="563"
-                    alt="" />
-                  <div class="grid-item-on-hover wave-mouseover" data-color="">
-                    <div class="grid-child">
-                      <div class="grid-text-title">
-                        <h3 class="grid-item-title">Annoying behavoir Illustration</h3>
-                      </div>
-                      <div class="grid-text-subtitle"><span class="grid-item-subtitle">Illustrations</span></div>
-                    </div>
-                    <div class="helper"></div>
-                  </div>
-                </a>
-              </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item 26 item-small">
+                        <a class="portfolio" href="#">
+                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <div class="grid-item-on-hover wave-mouseover" data-color="">
+                                <div class="grid-child">
+                                  <div class="grid-text-title">
+                                    <h3 class="grid-item-title">3T Company</h3>
+                                    <h4>Empresa peruana de multinivel</h4>
+                                  </div>
+                                  <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
+                                </div>
+                                <div class="helper"></div>
+                            </div>
+                        </a>
+                    </li>
               </ul>
             </div>
           </div>
@@ -823,7 +817,7 @@
             <div class="vc_col-sm-8 wpb_column column_container ">
               <div class="wpb_wrapper">
                 <header class="section-title text-center ">
-                  <h2>Behind The <strong>Scenes</strong></h2>
+                  <h2>Nuestros<strong> Expertos</strong></h2>
                 </header>
                 <div class="wpb_text_column wpb_content_element ">
                   <div class="wpb_wrapper">
@@ -845,123 +839,55 @@
           <div id="vsc_row_sbfzkyfivl" class=" vc_row wpb_row vc_inner vc_row-fluid dark container" style=""
             data-token="NtFvE">
             <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-bottom' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s'>
-              <div class="vc_col-sm-3 wpb_column column_container ">
+              <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
                     <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Amy1-10-1-6.jpg);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">
-                            <p>Amy is one of those crazy creatives who run the world with their genius ideas</p>
+                              <p><?php echo replace_vocales_voculeshtml("Experto en Informática, especialista en construcción de software, sistemas web y plataformas para empresas multinivel  y tradicionales. Cuenta con una experiencia de más de 9 años como líder top de la industria del networkmarketing (MLM) y es uno de los mejores asesores en creación es de empresas multinivel.");?></p>
                           </div>
                         </div>
-                        <ul class="socials-block">
-                          <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                          <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                          <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                        </ul>
                       </div>
                     </div>
-                    <h3 class="member-name">Amy Warner</h3><span class="member-position">Graphic designer</span>
-                    <ul class="socials-block">
-                      <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                      <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                    </ul>
+                    <h3 class="member-name">Rolando Contreras</h3><span class="member-position">Directo de Desarrollo Web</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-top' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s;opacity: 0;-webkit-animation-delay: 0.2s;-moz-animation-delay: 0.2s;-ms-animation-delay: 0.2s;-o-animation-delay: 0.2s;animation-delay: 0.2s'>
-              <div class="vc_col-sm-3 wpb_column column_container ">
+              <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
                     <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Alec1-10-1-6.jpg);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">
-                            <p>Alec is well known as a community leader, having served as a board member and member of various forums in the U.S.</p>
+                            <p><?php echo replace_vocales_voculeshtml("Productora, asesora y docente en comunicación audiovisual. Como productora freelancer ha participado en la realización de audiovisuales de diverso género para instituciones privadas y campañas en organizaciones no gubernamentales (ONGs)");?></p>
                           </div>
                         </div>
-                        <ul class="socials-block">
-                          <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                          <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                          <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                          <li><a href="linkedin" class="linked_in" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
                       </div>
                     </div>
-                    <h3 class="member-name">Alec Krosovic</h3><span class="member-position">Founder</span>
-                    <ul class="socials-block">
-                      <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                      <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                      <li><a href="linkedin" class="linked_in" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+                    <h3 class="member-name"><?php echo replace_vocales_voculeshtml("María del Carmen Fernández");?></h3><span class="member-position">Directora de Marketing</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-bottom' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s;opacity: 0;-webkit-animation-delay: 0.4s;-moz-animation-delay: 0.4s;-ms-animation-delay: 0.4s;-o-animation-delay: 0.4s;animation-delay: 0.4s'>
-              <div class="vc_col-sm-3 wpb_column column_container ">
+              <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
                     <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Ellen1-10-1-6.jpg);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">
-                            <p>Ellen has over 13 years of experience in development projects as a senior consultant and project manager in the areas of project
-                              management.</p>
+                              <p><?php echo replace_vocales_voculeshtml("Realizador audiovisual con experiencia en el área de fotografía, edición y postproducción de video y diseño gráfico. En su trabajo profesional ha realizado programas para cadenas de televisión internacional, campañas para instituciones estatales, compañías privadas y canales web con las últimas tendencias del video marketing digital.");?></p>
                           </div>
                         </div>
-                        <ul class="socials-block">
-                          <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                          <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                          <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                        </ul>
                       </div>
                     </div>
-                    <h3 class="member-name">Ellen Blax</h3><span class="member-position">Project Manager</span>
-                    <ul class="socials-block">
-                      <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                      <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://facebook.com/facebook" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-top' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s;opacity: 0;-webkit-animation-delay: 0.6s;-moz-animation-delay: 0.6s;-ms-animation-delay: 0.6s;-o-animation-delay: 0.6s;animation-delay: 0.6s'>
-              <div class="vc_col-sm-3 wpb_column column_container ">
-                <div class="wpb_wrapper">
-                  <div class="vsc_team_member wpb_content_element">
-                    <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Mike1-10-1-6.jpg);">
-                      <div class="meta-overlay">
-                        <div class="text-wrapper">
-                          <div class="text-container">
-                            <p>Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information
-                              Systems.</p>
-                          </div>
-                        </div>
-                        <ul class="socials-block">
-                          <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                          <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                          <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h3 class="member-name">Mike Bolder</h3><span class="member-position">Developer</span>
-                    <ul class="socials-block">
-                      <li><a href="mailto:email@email.com" class="email" title="email@email.com"><i class="fa fa-envelope-o"></i></a></li>
-                      <li><a href="https://twitter.com/@twitter" class="twitter" title="@twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="skype:skype:amy?chat" class="skype" title="skype:amy"><i class="fa fa-skype"></i></a></li>
-                    </ul>
+                      <h3 class="member-name">Daniel Gonzales</h3><span class="member-position">Director de Audiovisual</span>
                   </div>
                 </div>
               </div>

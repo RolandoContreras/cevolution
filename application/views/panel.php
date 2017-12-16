@@ -32,11 +32,6 @@
                                                     <td><a href="<?php echo site_url().'dashboard/clientes';?>"><b><?php echo $obj_customer?></b> <i class="icon-edit"></i>Total Asociados</a></td>
                                                     <td><a href="<?php echo site_url().'dashboard/financiados';?>" class="pending"><b class="cmd"><?php echo $obj_financiado;?></b> <i class="icon-edit"></i> Financiados</a></td>
                                             </tr>
-                                            <tr>
-                                                <td><a>Precio del BTC</a>&nbsp;&nbsp;&nbsp;<input type="text" name="btc_price" id="btc_price" value="<?php echo $bitcoin;?>" style="vertical-align: middle !important;">&nbsp;&nbsp;&nbsp;<button onclick="guardar_btc();" class="btn btn-info">Guardar</button></td>
-                                                    <td></td>
-                                            </tr>
-                                           
                                     </tbody>
                             </table>
                     </div>

@@ -52,7 +52,7 @@
   <link rel='stylesheet' id='vc_tta_style-css' href='<?php echo site_url().'static/page_front/css/js_composer_tta.min.css?ver=5.2.1'?>' type='text/css' media='all' />
   <link rel='stylesheet' id='vc_linecons-css' href='<?php echo site_url().'static/page_front/css/vc_linecons_icons.min.css?ver=5.2.1'?>' type='text/css' media='all' />
   <script type='text/javascript'>
-    /* <![CDATA[ */var edd_scripts = {"ajaxurl":"http:\/\/demo.startuplywp.com\/wp-admin\/admin-ajax.php","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"0","default_gateway":"","redirect_to_checkout":"0"};/* ]]> */
+    /* <![CDATA[ */var edd_scripts = {"ajaxurl":"","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"0","default_gateway":"","redirect_to_checkout":"0"};/* ]]> */
   </script>
   <script type='text/javascript' src='<?php echo site_url().'static/page_front/js/edd-ajax.min.js?ver=2.8.3'?>'></script>
   <script type='text/javascript' src='<?php echo site_url().'static/page_front/js/comment-reply.min.js?ver=4.7.3'?>'></script>

@@ -822,10 +822,7 @@
                 <div class="wpb_text_column wpb_content_element ">
                   <div class="wpb_wrapper">
                     <div class="wpb_text_column-text-style" style="">
-                      <p>Our team maintains an effective mix of development experience and seasoned leadership in order to provide innovative strategies and
-                        solutions required to meet the needs of our international client base. Our team relies on unparalleled project management, monitoring
-                        and evaluation, information technology, risk management, team management, and stakeholder management experience in order to ensure
-                        our clients&#8217; success.</p>
+                        <p><?php echo replace_vocales_voculeshtml("Nuestro equipo mantiene una combinación efectiva de experiencia de desarrollo y liderazgo experimentado para proporcionar estrategias innovadoras y soluciones necesarias para satisfacer las necesidades de nuestra base de clientes nacionales e internacionales. Nuestro equipo cuenta con una administración de proyectos, monitoreo y evaluación sin precedentes en tecnología de la información y marketing para garantizar el éxito de nuestros clientes.");?></p>
                     </div>
                   </div>
                 </div>
@@ -842,7 +839,7 @@
               <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
-                    <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Amy1-10-1-6.jpg);">
+                      <div class="photo-wrapper" style="background-image: url(<?php echo site_url().'static/page_front/images/team/rolando_contreras.jpg';?>);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">
@@ -860,7 +857,7 @@
               <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
-                    <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Alec1-10-1-6.jpg);">
+                    <div class="photo-wrapper" style="background-image: url(<?php echo site_url().'static/page_front/images/team/maria_fernandez.jpg';?>);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">
@@ -878,7 +875,7 @@
               <div class="vc_col-sm-4 wpb_column column_container ">
                 <div class="wpb_wrapper">
                   <div class="vsc_team_member wpb_content_element">
-                    <div class="photo-wrapper" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2014/09/Ellen1-10-1-6.jpg);">
+                    <div class="photo-wrapper" style="background-image: url(<?php echo site_url().'static/page_front/images/team/daniel_gonzales.jpg';?>);">
                       <div class="meta-overlay">
                         <div class="text-wrapper">
                           <div class="text-container">

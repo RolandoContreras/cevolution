@@ -100,8 +100,7 @@
                                 <div class="wpb_single_image wpb_content_element vc_align_right">
                                   <div class="wpb_wrapper">
                                     <div class="vc_single_image-wrapper vc_box_border_grey">
-                                        <img width="589" height="453" src="http://demo.startuplywp.com/wp-content/uploads/2014/09/people1-10-1-6.jpg" class="vc_single_image-img attachment-full" alt="" srcset="http://demo.startuplywp.com/wp-content/uploads/2014/09/people1-10-1-6.jpg 589w, http://demo.startuplywp.com/wp-content/uploads/2014/09/people1-10-1-6-300x231.jpg 300w"
-                                        sizes="(max-width: 589px) 100vw, 589px" />
+                                        <img width="589" height="453" src="<?php echo site_url().'static/page_front/gif/wrapper-img.gif';?>" class="vc_single_image-img attachment-full" alt="vision" srcset="<?php echo site_url().'static/page_front/gif/wrapper-img.gif';?> 589w, <?php echo site_url().'static/page_front/gif/wrapper-img.gif';?> 300w" sizes="(max-width: 589px) 100vw, 589px" />
                                     </div>
                                   </div>
                                 </div>
@@ -698,6 +697,7 @@
         </div>
       </div>
     </div>
+      <!--//START OUR WORKS-->
     <div id="portfolio" class=" vc_row wpb_row vc_inner vc_row-fluid dark container" style="" data-token="WUsAR">
       <div class='wpb_animate_when_almost_visible gambit-css-animation slide-to-top' style='-webkit-animation-duration: 0.5s;-moz-animation-duration: 0.5s;-ms-animation-duration: 0.5s;-o-animation-duration: 0.5s;animation-duration: 0.5s'>
         <div class="vc_col-sm-12 wpb_column column_container ">
@@ -726,7 +726,7 @@
                     </li>
                     <li class="grid-item 26 item-small">
                         <a class="portfolio" href="#">
-                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <img src="<?php echo site_url().'static/page_front/images/works/bitshare_site_web.jpg';?>" alt="bitshare" />
                             <div class="grid-item-on-hover wave-mouseover" data-color="">
                                 <div class="grid-child">
                                   <div class="grid-text-title">
@@ -741,12 +741,12 @@
                     </li>
                     <li class="grid-item 26 item-small">
                         <a class="portfolio" href="#">
-                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <img src="<?php echo site_url().'static/page_front/images/works/criptowin_web_site.jpg';?>" alt="criptowin" />
                             <div class="grid-item-on-hover wave-mouseover" data-color="">
                                 <div class="grid-child">
                                   <div class="grid-text-title">
-                                    <h3 class="grid-item-title">3T Company</h3>
-                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                    <h3 class="grid-item-title">CRIPTOWIN</h3>
+                                    <h4 class="grid-item-title">Plataforma de Inversiones</h4>
                                   </div>
                                   <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
                                 </div>
@@ -756,12 +756,12 @@
                     </li>
                     <li class="grid-item 26 item-small">
                         <a class="portfolio" href="#">
-                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <img src="<?php echo site_url().'static/page_front/images/works/jaquemente_web_site.jpg';?>" alt="jaquemente" />
                             <div class="grid-item-on-hover wave-mouseover" data-color="">
                                 <div class="grid-child">
                                   <div class="grid-text-title">
                                     <h3 class="grid-item-title">3T Company</h3>
-                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                    <h4 class="grid-item-title">Plataforma de Cursos de Desarrollo Personal</h4>
                                   </div>
                                   <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
                                 </div>
@@ -771,12 +771,12 @@
                     </li>
                     <li class="grid-item 26 item-small">
                         <a class="portfolio" href="#">
-                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <img src="<?php echo site_url().'static/page_front/images/works/empire_web_site.jpg';?>" alt="empire" />
                             <div class="grid-item-on-hover wave-mouseover" data-color="">
                                 <div class="grid-child">
                                   <div class="grid-text-title">
-                                    <h3 class="grid-item-title">3T Company</h3>
-                                    <h4 class="grid-item-title">Empresa peruana de multinivel</h4>
+                                    <h3 class="grid-item-title">Empire</h3>
+                                    <h4 class="grid-item-title"><?php echo replace_vocales_voculeshtml("Plataforma de educación Forex");?></h4>
                                   </div>
                                   <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
                                 </div>
@@ -786,12 +786,12 @@
                     </li>
                     <li class="grid-item 26 item-small">
                         <a class="portfolio" href="#">
-                            <img src="http://demo.startuplywp.com/wp-content/uploads/2014/09/andres_alvarez1-10-1-6.jpg" width="724" height="500" alt="" />
+                            <img src="<?php echo site_url().'static/page_front/images/works/cevoluion_site_web.jpg';?>" alt="cevolution" />
                             <div class="grid-item-on-hover wave-mouseover" data-color="">
                                 <div class="grid-child">
                                   <div class="grid-text-title">
-                                    <h3 class="grid-item-title">3T Company</h3>
-                                    <h4>Empresa peruana de multinivel</h4>
+                                    <h3 class="grid-item-title">Cevolution Web</h3>
+                                    <h4 class="grid-item-title">Agencia de Marketing Digital</h4>
                                   </div>
                                   <div class="grid-text-subtitle"><span class="grid-item-subtitle"></span></div>
                                 </div>
@@ -807,6 +807,7 @@
       </div>
     </div>
     </div>
+      <!--//END OUR WORKS-->
     <div id="ourteam" class=" vc_row wpb_row vc_inner vc_row-fluid dark container" style="" data-token="8wcHa">
       <div class="vc_col-sm-12 wpb_column column_container aligncenter">
         <div class="wpb_wrapper">
@@ -894,8 +895,7 @@
         </div>
       </div>
     </div>
-    <div id="cta_footer" class="parallax vc_row wpb_row vc_inner vc_row-fluid vc_custom_1489794819977 light row" style="background-image: url(http://demo.startuplywp.com/wp-content/uploads/2017/02/startuply_bg.jpg);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;"
-      data-token="Cz9Ge">
+      <div id="cta_footer" class="parallax vc_row wpb_row vc_inner vc_row-fluid vc_custom_1489794819977 light row" style="background-image: url(<?php echo site_url().'static/page_front/images/startuply_bg.jpg';?>);background-repeat:no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;" data-token="Cz9Ge">
       <div class="container">
         <div class="vc_col-sm-12 wpb_column column_container ">
           <div class="wpb_wrapper">

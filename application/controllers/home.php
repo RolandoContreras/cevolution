@@ -32,6 +32,7 @@ class Home extends CI_Controller {
            
            //GET DATA FROM ABOUT
            $obj_about= $this->obj_about->search($params);
+           
            $key = 1;
            foreach ($obj_about as $key => $value) {
                switch ($key) {

@@ -300,7 +300,9 @@
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-rocket"></span></div>
+                    <div class="blurb-minimal__icon">
+                        <span class="icon lnr lnr-laptop-phone"></span>
+                    </div>
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title heading-6">Softwares a medida</p>
@@ -312,7 +314,9 @@
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-equalizer"></span></div>
+                    <div class="blurb-minimal__icon">
+                        <span class="icon lnr lnr-users"></span>
+                    </div>
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title heading-6">Profesionales expertos a tu servicio</p>
@@ -324,7 +328,9 @@
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-arrow-down-square"></span></div>
+                    <div class="blurb-minimal__icon">
+                        <span class="icon lnr lnr-rocket"></span>
+                    </div>
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title heading-6">Productos creados para actualizarse</p>
@@ -346,10 +352,10 @@
         <div class="container">
           <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
             <div class="col-xl-8 text-xl-left">
-              <h4><span class="text-transform-none heading-5">the</span><span class="text-transform-none">FUTURE</span><br><span>is a flexible solution with lots of advantages</span></h4>
-              <p>Our template offers you  a variety of elements to be combined.</p>
+              <h4><span class="text-transform-none">EVOLUCION</span><br><span>Una solución flexible a bajo costo</span></h4>
+              <p>¡Empieza a construir tus sueños, contáctate ahora!</p>
             </div>
-            <div class="col-xl-2 text-xl-right"><a class="button button-primary" target="_blank" href="#">Get it now</a></div>
+              <div class="col-xl-2 text-xl-right"><a class="button button-primary" href="<?php echo site_url().'contact';?>">Contacto</a></div>
           </div>
         </div>
       </section>
@@ -491,55 +497,6 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div></a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- counters-->
-      <section class="section parallax-container context-dark" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/parallax-1.jpg">
-        <div class="parallax-content">
-          <div class="container section-md">
-            <div class="row justify-content-md-center row-50">
-              <div class="col-md-6 col-lg-3">
-                <!-- Box counter-->
-                <article class="box-counter">
-                  <div class="box-counter__icon linear-icon-coffee-cup"></div>
-                  <div class="box-counter-main">
-                    <div class="counter">100</div>
-                  </div>
-                  <p class="box-counter-title">Projects Annually</p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- Box counter-->
-                <article class="box-counter">
-                  <div class="box-counter__icon linear-icon-cube"></div>
-                  <div class="box-counter-main">
-                    <div class="counter">45</div>
-                  </div>
-                  <p class="box-counter-title">Awards</p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- Box counter-->
-                <article class="box-counter">
-                  <div class="box-counter__icon linear-icon-chevrons-expand-horizontal"></div>
-                  <div class="box-counter-main">
-                    <div class="counter">98</div><span>%</span>
-                  </div>
-                  <p class="box-counter-title">Positive Reviews</p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- Box counter-->
-                <article class="box-counter">
-                  <div class="box-counter__icon linear-icon-mustache-glasses"></div>
-                  <div class="box-counter-main">
-                    <div class="counter">147</div><span>k</span>
-                  </div>
-                  <p class="box-counter-title">Happy Customers</p>
-                </article>
               </div>
             </div>
           </div>

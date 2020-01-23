@@ -355,20 +355,24 @@
       </section>
       <!-- portfolio-->
       <section class="section-md bg-default text-center">
-        <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-6.png" alt=""/>
+        <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
+            <img src="<?php echo site_url().'static/page_front/images/bg-decor-6.png';?>" alt="fondo_works"/>
         </div>
         <div class="container">
-          <h4 class="heading-decorated">Portfolio</h4>
+          <h4 class="heading-decorated">Portafolio</h4>
           <div class="isotope-wrap row row-70">
             <div class="col-sm-12">
               <ul class="list-nav isotope-filters isotope-filters-horizontal">
-                <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">All</a></li>
-                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Objects</a></li>
-                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">People</a></li>
+                <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">Todos</a></li>
+                <li><a data-isotope-filter="Category_1" data-isotope-group="gallery" href="#">Software</a></li>
+                <li><a data-isotope-filter="Category_2" data-isotope-group="gallery" href="#">Diseños</a></li>
               </ul>
               <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-5-418x315.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2"><a class="img-thumbnail-variant-3" href="single-portfolio.html">
+                        <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-5-418x315.jpg" alt="" width="418" height="315"/>
+                        <span class="label-custom label-white">Link</span>
+                          <div class="caption">
+                            <span class="icon hover-top-element linear-icon-folder-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
                               <li>9 photos</li>
                               <li>People</li>
@@ -378,8 +382,10 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/slider-slide-14-1280x1920.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-2-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/slider-slide-14-1280x1920.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-2-418x315.jpg" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
@@ -390,10 +396,13 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-9-1920x1282.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-9-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-9-1920x1282.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-9-418x315.jpg" alt="" width="418" height="315"/>
                           </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                          <div class="caption">
+                            <span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
                               <li>People</li>
                             </ul>
@@ -402,8 +411,10 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-4-1920x1920.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-4-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-4-1920x1920.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-4-418x315.jpg" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
@@ -414,7 +425,8 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1"><a class="img-thumbnail-variant-3" href="single-portfolio.html">
+                        <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
                           <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
                               <li>9 photos</li>
@@ -425,8 +437,10 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-6-1920x1539.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-6-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-6-1920x1539.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-6-418x315.jpg" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
@@ -437,8 +451,25 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-7-1280x1920.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-7-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-7-1280x1920.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-7-418x315.jpg" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption">
+                              <span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>People</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">Photo</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
+                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-8-1920x1336.jpg" data-lightgallery="item">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-8-418x315.jpg" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
@@ -449,19 +480,7 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-8-1920x1336.jpg" data-lightgallery="item">
-                          <figure><img src="images/portfolio-8-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div></a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-3-418x315.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-3-418x315.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
                           <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
                               <li>9 photos</li>
@@ -526,16 +545,15 @@
           </div>
         </div>
       </section>
-
       <!-- Meet Our Team-->
-      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Team">
+<!--      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Team">
         <div class="bg-decor d-flex align-items-start" data-parallax-scroll="{&quot;y&quot;: -50,  &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-7.png" alt=""/>
         </div>
         <div class="container">
           <h4 class="heading-decorated">Meet Our Team</h4>
           <div class="row row-50 offset-top-1">
             <div class="col-md-6 col-lg-4">
-              <!-- Thumb corporate-->
+               Thumb corporate
               <div class="thumb thumb-corporate">
                 <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/calvin-fitzerald-418x315.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
@@ -556,7 +574,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
-              <!-- Thumb corporate-->
+               Thumb corporate
               <div class="thumb thumb-corporate">
                 <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/luis-maxwell-418x415.jpg" alt="" width="418" height="415"/>
                   <div class="thumb-corporate__overlay">
@@ -577,7 +595,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
-              <!-- Thumb corporate-->
+               Thumb corporate
               <div class="thumb thumb-corporate">
                 <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/josh-wagner-418x315.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
@@ -599,7 +617,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <section class="section parallax-container context-dark decor-text" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/bg-image-6.jpg" data-content="Testimonials">
         <div class="parallax-content"> 
           <div class="container section-lg text-center">
@@ -649,31 +667,63 @@
         <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-4.png" alt=""/>
         </div>
         <div class="container">
-          <h4 class="heading-decorated">Our Clients</h4>
+          <h4 class="heading-decorated">Nuestros Clientes</h4>
           <div class="row row-30">
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-1-126x102.png" alt="" width="126" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="#" target="_self">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/evolucion.png';?>" alt="Evolucion Web"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-2-134x102.png" alt="" width="134" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="https://mibcacapital.com/" target="_blank">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/bca_capital.png';?>" alt="bca_capital"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-3-132x102.png" alt="" width="132" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="http://cerebritodigitalperu.com/" target="_blank">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/cerebrito_digital.png';?>" alt="Cerebrito Digital"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-4-126x102.png" alt="" width="126" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="https://culturaimparable.com/" target="_blank">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/cultura_imparable.png';?>" alt="Cultura Imparable"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-5-138x102.png" alt="" width="138" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="#" target="_self">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/3t_club.png';?>" alt="3T Club"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-6-143x102.png" alt="" width="143" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="#" target="_self">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/golden_team.png';?>" alt="Golden Team"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-7-109x102.png" alt="" width="109" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="#" target="_self">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/easy_crypto.png';?>" alt="EasyCrypto"/>
+                  </a>
+              </figure>
             </div>
             <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="https://livedemo00.template-help.com/wt_69536/images/company-8-109x102.png" alt="" width="109" height="102"/></a></figure>
+              <figure class="box-icon-image">
+                  <a href="#">
+                      <img src="<?php echo site_url().'static/backoffice/img/clientes/jaquemete.png';?>" alt="Jaquemente"/>
+                  </a>
+              </figure>
             </div>
           </div>
         </div>

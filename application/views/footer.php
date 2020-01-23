@@ -72,7 +72,7 @@
                 <span class="copyright-year"></span>. All Rights Reserved.
                 <a href="<?php echo site_url().'privacy_policy';?>">Términos y uso de la política de privacidad</a></p>
             <ul class="list-inline-xxs">
-              <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="#"></a></li>
+                <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/evolucionweb.tech/" target="_blank"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-instagram" href="#"></a></li>

@@ -587,7 +587,7 @@
                 <!-- Quote default-->
                 <div class="quote-default">
                   <div class="quote-default__image">
-                      <img src="<?php echo site_url().'static/page_front/images/people/diego.jpg';?>" alt="Diego Vega"/>
+                      <img src="<?php echo site_url().'static/backoffice/img/testimony/diego.jpg';?>" alt="Diego Vega"/>
                   </div>
                   <div class="quote-default__text">
                     <p class="q">Quiero agradecer a EVOLUCION por el extraordinario trabajo en crear el sistema MLM para mi empresa Cerebrito Digital. Asimismo, agradezco a su CEO Rolando Contreras quien en todo momento nos brindó su apoyo profesional durante todo el proceso; sabemos que contamos con su ayuda y soporte para cualquier eventualidad.</p>

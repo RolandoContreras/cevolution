@@ -23,7 +23,7 @@
 |
 */
 //$config['base_url'] = 'http://cevolutionweb.com';
-$config['base_url'] = 'http://evolucionweb.tech/';
+$config['base_url'] = 'http://localhost/cevolution';
 
 
 /*

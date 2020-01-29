@@ -270,7 +270,9 @@
                     <article class="blurb blurb-minimal">
                       <div class="unit flex-row unit-spacing-md">
                         <div class="unit-left">
-                          <div class="blurb-minimal__icon"><span class="icon linear-icon-menu3"></span></div>
+                          <div class="blurb-minimal__icon">
+                              <span class="icon lnr lnr-star-half"></span>
+                          </div>
                         </div>
                         <div class="unit-body">
                           <p class="blurb__title heading-12"><a>¿Por qué EVOLUCION?</a></p>
@@ -578,41 +580,19 @@
       <section class="section parallax-container context-dark decor-text" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/bg-image-6.jpg" data-content="Testimonials">
         <div class="parallax-content"> 
           <div class="container section-lg text-center">
-            <h4 class="heading-decorated">WHAT PEOPLE SAY</h4>
+            <h4 class="heading-decorated">QUE DICEN LOS CLIENTES</h4>
             <!-- Owl Carousel-->
             <div class="owl-carousel" data-items="1" data-stage-padding="15" data-loop="true" data-margin="30" data-dots="true" data-nav="false" data-autoplay="true">
               <div class="item">
                 <!-- Quote default-->
                 <div class="quote-default">
-                  <div class="quote-default__image"><img src="https://livedemo00.template-help.com/wt_69536/images/deborah-quagmire-120x120.jpg" alt="" width="120" height="120"/>
-                  </div>
-                  <div class="quote-default__text">
-                    <p class="q">Since I’m not a real pro in web design, I love to use these ready-made and beautifully looking templates. They are available at very affordable prices and they save you a lot of time, and deliver from a lot of sweat and tears!</p>
-                  </div>
-                  <p class="quote-default__cite">Jane Smith</p>
-                </div>
-              </div>
-              <div class="item">
-                <!-- Quote default-->
-                <div class="quote-default">
                   <div class="quote-default__image">
-                      <img src="https://livedemo00.template-help.com/wt_69536/images/benedict-arnold-120x120.jpg" alt="" width="120" height="120"/>
+                      <img src="<?php echo site_url().'static/page_front/images/people/diego.jpg';?>" alt="Diego Vega"/>
                   </div>
                   <div class="quote-default__text">
-                    <p class="q">This template has everything I was looking for my business website to have. From easy-to-customize pages to flawlessly working web tools, theFuture is my number one choice!</p>
+                    <p class="q">Quiero agradecer a EVOLUCION por el extraordinario trabajo en crear el sistema MLM para mi empresa Cerebrito Digital. Asimismo, agradezco a su CEO Rolando Contreras quien en todo momento nos brindó su apoyo profesional durante todo el proceso; sabemos que contamos con su ayuda y soporte para cualquier eventualidad.</p>
                   </div>
-                  <p class="quote-default__cite">Kate Wilson</p>
-                </div>
-              </div>
-              <div class="item">
-                <!-- Quote default-->
-                <div class="quote-default">
-                  <div class="quote-default__image"><img src="https://livedemo00.template-help.com/wt_69536/images/testimonials-3-120x120.jpg" alt="" width="120" height="120"/>
-                  </div>
-                  <div class="quote-default__text">
-                    <p class="q">Thank you for such an affordable and multipurpose template! It’s easy to configure and use, and what’s more important it looks great. It’s just what I wanted for my website. Keep doing a great job, I’m sure to become a returning customer!</p>
-                  </div>
-                  <p class="quote-default__cite">Ann Williams</p>
+                  <p class="quote-default__cite">Diego Vega</p>
                 </div>
               </div>
             </div>

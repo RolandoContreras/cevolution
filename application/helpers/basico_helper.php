@@ -22,6 +22,21 @@ function corta_texto($texto, $longitud=400) {
     return $texto; 
 }
 
+function encrypt($cadena){
+    $key='c7850f98Tc0150Z2191Y29abb3f9fbc9i';
+    $string = utf8_encode($cadena);
+    $string = $key.$string.$key; //concateno la llave para encriptar la cadena
+    $encrypted = base64_encode($string);//codifico la cadena
+    return($encrypted);
+}
+
+function decrypt($cadena){
+     $key='c7850f98Tc0150Z2191Y29abb3f9fbc9i';  // Una clave de codificacion, debe usarse la misma para encriptar y desencriptar
+     $string = base64_decode($cadena); //decodifico la cadena
+     $decrypted = str_replace($key, "", "$string"); //quito la llave de la cadena
+     return $decrypted;  //Devuelve el string desencriptado
+}
+
 function convert_slug($url){
     $search  = array('á', 'é', 'í', 'ó', 'ú',' ','ñ','Á', 'É', 'Í', 'Ó', 'Ú');
     $replace = array('a', 'e', 'i', 'o', 'u','-','n','a', 'e', 'i', 'o', 'u');    
@@ -34,10 +49,46 @@ function convert_query($slug){
     return strtolower(str_replace($search, $replace, $slug));
 }
 
-function format_number($number){
+function format_number_moneda_soles($number){
     $decimals ="2";
     $number = number_format($number, $decimals);
     return "S/.".$number;
+}
+
+function delete_last_caracter($string){
+    $new_string = substr($string, 0, -1);
+    return $new_string;
+}
+
+function format_number_dolar($number){
+    $decimals ="2";
+    $number = number_format($number, $decimals);
+    return "$".$number;
+}
+
+function quitar_coma_number($number){
+    $number = str_replace(',','',$number);
+    return $number;
+}
+
+function quitar_punto_number($number){
+    $number = str_replace('.','',$number);
+    return $number;
+}
+
+function quitar_2_ultimos_numero($number){
+    $number = str_replace('.','',$number);
+    return $number;
+}
+
+function convert_mayuscula($string){
+    $string = strtoupper($string);
+    return $string;
+}
+
+function format_number_miles($number){
+    $number = number_format($number, 0, '.', ',');
+    return $number;
 }
 
 function formato_fecha($fecha){    
@@ -48,6 +99,71 @@ function formato_fecha($fecha){
     $dia_semana = dia_semana($mes,$dia,$anio);
     $mostrar_mes = mostrar_mes($mes);
     return  $dia_semana." ".$dia." de ".$mostrar_mes." del ".$anio;
+}
+
+function formato_fecha_dia_mes($fecha){    
+    $dia=substr($fecha, 8, 2);
+    $mes=substr($fecha, 5, 2);
+    $anio=substr($fecha, 0, 4);
+    
+    $dia_semana = dia_semana($mes,$dia,$anio);
+    $mostrar_mes = mostrar_mes($mes);
+    return  $dia."/".$mostrar_mes;
+}
+
+function formato_fecha_dia($fecha){    
+    $dia=substr($fecha, 8, 2);
+    $mes=substr($fecha, 5, 2);
+    $anio=substr($fecha, 0, 4);
+    
+    $dia_semana = dia_semana($mes,$dia,$anio);
+    $mostrar_mes = mostrar_mes($mes);
+    return  $dia;
+}
+
+function formato_fecha_mes($fecha){    
+    $dia=substr($fecha, 8, 2);
+    $mes=substr($fecha, 5, 2);
+    $anio=substr($fecha, 0, 4);
+    
+    $dia_semana = dia_semana($mes,$dia,$anio);
+    $mostrar_mes = mostrar_mes($mes);
+    return  $mostrar_mes;
+}
+
+function last_month_day($month,$year){ 
+      $day = date("d", mktime(0,0,0, $month+1, 0, $year));
+      return date('Y-m-d', mktime(0,0,0, $month, $day, $year));
+}
+ 
+function first_month_day($month,$year){
+//      $month = date('m');
+//      $year = date('Y');
+      return date('Y-m-d', mktime(0,0,0, $month, 1, $year));
+}
+
+function first_week_actual(){
+    //LUNES
+      return date("Y-m-d", strtotime('monday this week'));
+}
+
+function last_week_actual(){
+    //DOMINGO
+      return date("Y-m-d", strtotime('sunday this week')); 
+}
+
+function last_month_day_actual(){ 
+    //LUNES
+      $month = date('m');
+      $year = date('Y');
+      $day = date("d", mktime(0,0,0, $month+1, 0, $year));
+      return date('Y-m-d', mktime(0,0,0, $month, $day, $year));
+}
+
+function first_month_day_actual(){
+      $month = date('m');
+      $year = date('Y');
+      return date('Y-m-d', mktime(0,0,0, $month, 1, $year));
 }
 
 function dia_semana($mes,$dia,$anio){
@@ -81,51 +197,51 @@ function dia_semana($mes,$dia,$anio){
 function mostrar_mes($mes){
 	switch($mes){
 		case 1:
-		$nom_mes = "Enero";
+		$nom_mes = "Ene";
 		break;
 		
 		case 2: 
-		$nom_mes = "Febrero";
+		$nom_mes = "Feb";
 		break;
 		 
 		case 3:
-		$nom_mes = "Marzo";
+		$nom_mes = "Mar";
 		break;
 		 
 		case 4:
-		$nom_mes = "Abril";
+		$nom_mes = "Abr";
 		break;
 		 
 		case 5:
-		$nom_mes = "Mayo";
+		$nom_mes = "May";
 		break;
 		 
 		case 6:
-		$nom_mes = "Junio";
+		$nom_mes = "Jun";
 		break;
 		 
 		case 7:
-		$nom_mes = "Julio";
+		$nom_mes = "Jul";
 		break;
 		 
 		case 8:
-		$nom_mes = "Agosto";
+		$nom_mes = "Ago";
 		break;
 		 
 		case 9:
-		$nom_mes = "Septiembre";
+		$nom_mes = "Sep";
 		break;
 		 
 		case 10:
-		$nom_mes = "Octubre";
+		$nom_mes = "Oct";
 		break;
 		 
 		case 11:
-		$nom_mes = "Noviembre";
+		$nom_mes = "Nov";
 		break;
 		 
 		case 12:
-		$nom_mes = "Diciembre";
+		$nom_mes = "Dic";
 		break;
 		
 	}
@@ -150,6 +266,12 @@ function formato_fecha_barras($fecha){
     return  $dia."/".$mes."/".$anio;
 }
 
+function formato_fecha_minutos($fecha){    
+    $hora=substr($fecha, 11, 2);
+    $minuto=substr($fecha, 14, 2);
+    return  $hora.":".$minuto;
+}
+
 function convert_formato_fecha_db($day,$month,$year){    
     return $year."/".$month."/".$day;
 }
@@ -159,6 +281,27 @@ function formato_fecha_db_time($fecha){
     $mes=substr($fecha, 5, 2);
     $anio=substr($fecha, 0, 4); 
     return $anio."/".$mes."/".$dia;
+}
+
+function formato_fecha_db_mes_dia_ano($fecha){   
+    $dia=substr($fecha, 0, 2);
+    $mes=substr($fecha, 3, 2);
+    $anio=substr($fecha, 6, 4); 
+    return $anio."/".$mes."/".$dia;
+}
+
+function formato_fecha_db($fecha){   
+    $mes=substr($fecha, 0, 2);
+    $dia=substr($fecha, 3, 2);
+    $anio=substr($fecha, 6, 4); 
+    return $anio."-".$mes."-".$dia;
+}
+
+function formato_fecha_datepicker_ano_mes_dia($fecha){   
+    $mes=substr($fecha, 4, 2);
+    $dia=substr($fecha, 0, 2);
+    $anio=substr($fecha, 8, 4); 
+    return $mes."/".$dia."/".$anio;
 }
 
 function get_day_number($fecha){    
@@ -195,6 +338,21 @@ function replace_vocales_voculeshtml($str){
     $search  = array('á', 'é', 'í', 'ó', 'ú','Á', 'É', 'Í', 'Ó', 'Ú', '¿', 'ñ', 'Ñ');
     $replace = array('&aacute;', '&eacute;', '&iacute;', '&oacute;', '&uacute;','&Aacute;','&Eacute;', '&Iacute;', '&Oacute;', '&Uacute;', '&iquest;', '&ntilde;','&Ntilde;');    
     return str_replace($search, $replace, $str);
-    
+}
+
+function replace_euacutes_vocales($str){
+    $search  = array('á', 'é', 'í', 'ó', 'ú','Á', 'É', 'Í', 'Ó', 'Ú', '¿', 'ñ', 'Ñ');
+    $replace = array('&aacute;', '&eacute;', '&iacute;', '&oacute;', '&uacute;','&Aacute;','&Eacute;', '&Iacute;', '&Oacute;', '&Uacute;', '&iquest;', '&ntilde;','&Ntilde;');    
+    return str_replace($replace, $search, $str);
+}
+
+function str_to_mayusculas($string){
+    $str = strtoupper($string);
+    return $str;
+}
+
+function str_to_first_capital($string){
+    $str = ucfirst($string);
+    return $str;
 }
 ?>

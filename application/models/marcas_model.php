@@ -15,34 +15,32 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class comments_model_atributos{	
-    var $comment_id='';
+class marcas_model_atributos{	
+    var $marca_id='';
     var $name='';
-    var $email='';
-    var $comment='';
-    var $subject='';
-    var $date_comment='';
+    var $date='';
+    var $img='';
+    var $active='';
     var $status_value='';
     var $updated_at='';
     var $updated_by='';
 }
 
-class Comments_Model extends CI_Model{ 
+class Marcas_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'comments';
-	$this->table_id = 'comment_id';
-        $this->customer_id='';
+        $this->table = 'marcas';
+	$this->table_id = 'marca_id';
+        $this->marca_id='';
         $this->name='';
-        $this->email='';
-        $this->comment='';
-        $this->subject='';
-	$this->date_comment='';
-	$this->status_value='';
+        $this->img='';
+        $this->date='';
+	$this->active='';
+        $this->status_value='';
         $this->updated_at='';
         $this->updated_by='';
-	$this->fields = new comments_model_atributos();
+	$this->fields = new marcas_model_atributos();
     }   
     
     public function fields(){

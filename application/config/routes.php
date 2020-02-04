@@ -98,11 +98,17 @@ $route['dashboard/panel/masive_messages'] = "panel/masive_messages";
 //SECTION
 $route['dashboard/about'] = "d_about";
 
-//END SECTION
 $route['dashboard/testimonios'] = "d_testimonios";
 $route['dashboard/testimonios/load'] = "d_testimonios/load";
+$route['dashboard/testimonios/delete'] = "d_testimonios/delete";
 $route['dashboard/testimonios/load/([0-9]+)'] = "d_testimonios/load/$1";
 $route['dashboard/testimonios/validate'] = "d_testimonios/validate";
+
+$route['dashboard/marcas'] = "d_marcas";
+$route['dashboard/marcas/load'] = "d_marcas/load";
+$route['dashboard/marcas/load/([0-9]+)'] = "d_marcas/load/$1";
+$route['dashboard/marcas/delete'] = "d_marcas/delete";
+$route['dashboard/marcas/validate'] = "d_marcas/validate";
 
 $route['dashboard/pagos_diarios'] = "d_pay_dialy";
 $route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";

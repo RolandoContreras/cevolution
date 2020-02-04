@@ -9,11 +9,11 @@
             <div class="row align-items-center">
               <div class="col-md-12">
                 <div class="page-header-title">
-                  <h5 class="m-b-10">Mantenimientos de Testimonios</h5>
+                  <h5 class="m-b-10">Mantenimientos de Marcas</h5>
                 </div>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item"><a href="<?php echo site_url().'dashboard/';?>">Panel</a></li>
-                  <li class="breadcrumb-item"><a>Testimonios</a></li>
+                  <li class="breadcrumb-item"><a>Marcas</a></li>
                 </ul>
               </div>
             </div>
@@ -25,8 +25,8 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <h5>Listado de Clientes</h5>
-                    <button class="btn btn-secondary" type="button" onclick="new_testimony();"><span><span class="pcoded-micon"><i data-feather="plus"></i></span> Nuevo</span></button>
+                    <h5>Listado de Marcas</h5>
+                    <button class="btn btn-secondary" type="button" onclick="new_marca();"><span><span class="pcoded-micon"><i data-feather="plus"></i></span> Nuevo</span></button>
                   </div>
                   <div class="card-block">
                     <div class="table-responsive">
@@ -41,9 +41,7 @@
                                   <th class="sorting" tabindex="0" aria-controls="zero-configuration" rowspan="1" colspan="1" style="width: 100px;"
                                     aria-label="Position: activate to sort column ascending">FECHA</th>
                                   <th class="sorting" tabindex="0" aria-controls="zero-configuration" rowspan="1" colspan="1" style="width: 100px;"
-                                    aria-label="Office: activate to sort column ascending">CLIENTE</th>
-                                  <th class="sorting" tabindex="0" aria-controls="zero-configuration" rowspan="1" colspan="1" style="width: 200px;"
-                                    aria-label="Office: activate to sort column ascending">DESCRIPCION</th>
+                                    aria-label="Office: activate to sort column ascending">NOMBRE</th>
                                   <th class="sorting" tabindex="0" aria-controls="zero-configuration" rowspan="1" colspan="1" style="width: 150px;"
                                     aria-label="Age: activate to sort column ascending">IMAGEN</th>
                                   <th class="sorting" tabindex="0" aria-controls="zero-configuration" rowspan="1" colspan="1" style="width: 100px;"
@@ -54,13 +52,12 @@
                               </thead>
                               <tbody>
                                   
-                                   <?php foreach ($obj_testimony as $value): ?>
+                                   <?php foreach ($obj_marcas as $value): ?>
                                 <tr>
-                                <th><?php echo $value->testimony_id;?></th>
+                                <th><?php echo $value->marca_id;?></th>
                                 <td><?php echo formato_fecha($value->date);?></td>
                                 <td><?php echo $value->name;?></td>
-                                <td><?php echo corta_texto($value->description,100);?></td>
-                                <td><img width="50" src="<?php echo site_url().'static/backoffice/img/testimonios/'.$value->img;?>"></td>
+                                <td><img width="50" src="<?php echo site_url().'static/backoffice/img/marcas/'.$value->img;?>"></td>
                                 <td>
                                     <?php if ($value->active == 0) {
                                         $valor = "No Activo";
@@ -74,8 +71,8 @@
                                 <td>
                                     <div class="operation">
                                             <div class="btn-group">
-                                               <button class="btn btn-secondary" type="button" onclick="edit_testimony('<?php echo $value->testimony_id;?>');"><span><span class="pcoded-micon"><i data-feather="edit"></i></span> Editar</span></button>
-                                               <button class="btn btn-secondary" type="button" onclick="delete_testimony('<?php echo $value->testimony_id;?>');"><span><span class="pcoded-micon"><i data-feather="edit"></i></span> Eliminar</span></button>
+                                               <button class="btn btn-secondary" type="button" onclick="edit_marca('<?php echo $value->marca_id;?>');"><span><span class="pcoded-micon"><i data-feather="edit"></i></span> Editar</span></button>
+                                               <button class="btn btn-secondary" type="button" onclick="delete_marca('<?php echo $value->marca_id;?>');"><span><span class="pcoded-micon"><i data-feather="trash-2"></i></span> Eliminar</span></button>
                                             </div>
                                     </div>
                                 </td>
@@ -86,8 +83,7 @@
                                 <tr>
                                   <th rowspan="1" colspan="1">ID</th>
                                   <th rowspan="1" colspan="1">FECHA</th>
-                                  <th rowspan="1" colspan="1">CLIENTES</th>
-                                  <th rowspan="1" colspan="1">DESCRIPCION</th>
+                                  <th rowspan="1" colspan="1">NOMBRE</th>
                                   <th rowspan="1" colspan="1">IMAGEN</th>
                                   <th rowspan="1" colspan="1">ESTADO</th>
                                   <th rowspan="1" colspan="1">ACCIONES</th>
@@ -108,4 +104,4 @@
           </div>
         </div>
 </section>
-<script src="<?php echo site_url();?>static/cms/js/testimony.js"></script>
+<script src="<?php echo site_url();?>static/cms/js/marca.js"></script>

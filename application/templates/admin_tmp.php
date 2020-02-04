@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Administración - Evolucion</title>
+  <title>Dashboard - Evolucion</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -118,16 +118,9 @@
                 <span class="pcoded-mtext">Mantenimientos</span>
             </a>
             <ul class="pcoded-submenu">
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/bonos";?>"><i class="icon-large icon-th"></i>Bonos</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/categorias";?>"><i class="icon-large icon-th"></i>Categórías</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/clientes";?>"><i class="icon-large icon-th"></i>Clientes</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comentarios</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/comisiones";?>"><i class="icon-large icon-th"></i>Comisiones</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/facturas";?>"><i class="icon-large icon-th"></i>Facturas</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/videos";?>"><i class="icon-large icon-th"></i>Videos</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/membresias";?>"><i class="icon-large icon-th"></i>Pack</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/pagos";?>"><i class="icon-large icon-th"></i>Pagos</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/puntos_binario";?>"><i class="icon-large icon-th"></i>Puntos Binario</a></li>
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/diseños";?>"><i class="icon-large icon-th"></i>Diseños</a></li>
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/testimonios";?>"><i class="icon-large icon-th"></i>Testimonios</a></li>
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/software";?>"><i class="icon-large icon-th"></i>Software</a></li>
                 <?php if($_SESSION['usercms']['privilage'] > 1){ ?>
                 <li class="pcoded-hasmenu" ><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Usuarios</a></li>
                 <?php } ?>

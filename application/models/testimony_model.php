@@ -15,26 +15,34 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class about_model_atributos{	
-    var $about_id='';
+class testimony_model_atributos{	
+    var $testimony_id='';
     var $name='';
-    var $title='';
-    var $text='';
+    var $description='';
+    var $date='';
+    var $img='';
+    var $active='';
     var $status_value='';
+    var $updated_at='';
+    var $updated_by='';
 }
 
-class About_Model extends CI_Model{ 
+class Testimony_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'about';
-	$this->table_id = 'about_id';
-        $this->about_id='';
+        $this->table = 'testimony';
+	$this->table_id = 'testimony_id';
+        $this->testimony_id='';
         $this->name='';
-        $this->title='';
-        $this->text='';
-	$this->status_value='';
-	$this->fields = new about_model_atributos();
+        $this->description='';
+        $this->date='';
+        $this->img='';
+	$this->active='';
+        $this->status_value='';
+        $this->updated_at='';
+        $this->updated_by='';
+	$this->fields = new testimony_model_atributos();
     }   
     
     public function fields(){

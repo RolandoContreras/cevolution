@@ -619,62 +619,16 @@
         <div class="container">
           <h4 class="heading-decorated">Nuestros Clientes</h4>
           <div class="row row-30">
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="#" target="_self">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/evolucion.png';?>" alt="Evolucion Web"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="https://mibcacapital.com/" target="_blank">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/bca_capital.png';?>" alt="bca_capital"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="http://cerebritodigitalperu.com/" target="_blank">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/cerebrito_digital.png';?>" alt="Cerebrito Digital"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="https://culturaimparable.com/" target="_blank">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/cultura_imparable.png';?>" alt="Cultura Imparable"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="#" target="_self">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/3t_club.png';?>" alt="3T Club"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="#" target="_self">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/golden_team.png';?>" alt="Golden Team"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="#" target="_self">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/easy_crypto.png';?>" alt="EasyCrypto"/>
-                  </a>
-              </figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image">
-                  <a href="#">
-                      <img src="<?php echo site_url().'static/backoffice/img/clientes/jaquemete.png';?>" alt="Jaquemente"/>
-                  </a>
-              </figure>
-            </div>
+             <?php 
+             foreach ($obj_marcas as $value) { ?>
+                    <div class="col-sm-6 col-md-3">
+                      <figure class="box-icon-image">
+                          <a>
+                              <img src="<?php echo site_url()."static/backoffice/img/marcas/$value->img";?>" alt="<?php echo $value->name;?>"/>
+                          </a>
+                      </figure>
+                    </div>
+             <?php } ?> 
           </div>
         </div>
       </section>

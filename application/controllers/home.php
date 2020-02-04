@@ -5,6 +5,7 @@ class Home extends CI_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->model("testimony_model","obj_testimony");
+        $this->load->model("marcas_model","obj_marcas");
     }   
         
 	/**
@@ -32,10 +33,22 @@ class Home extends CI_Controller {
                                     testimony.date,
                                     testimony.img,
                                     testimony.active",
-                        "where" =>"testimony.active = 1"
+                        "where" =>"testimony.active = 1",
+                        "order" =>"testimony_id DESC"
                         );
            //OBTENER TODOS LOS TESTIMONIOS
            $data['obj_testimony'] = $this->obj_testimony->search($params);
+           //OBTENER LAS MARCAS
+           $params = array(
+                        "select" =>"marcas.marca_id,
+                                    marcas.name,
+                                    marcas.img",
+                        "where" =>"marcas.active = 1",
+                        "order" =>"marca_id DESC"
+                        );
+           //OBTENER TODOS LOS TESTIMONIOS
+           $data['obj_marcas'] = $this->obj_marcas->search($params);
+           
            //ENVIAR DATA A VISTA
            $this->load->view('home' ,$data);
 	}

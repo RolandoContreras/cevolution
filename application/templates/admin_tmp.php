@@ -118,7 +118,7 @@
                 <span class="pcoded-mtext">Mantenimientos</span>
             </a>
             <ul class="pcoded-submenu">
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/diseños";?>"><i class="icon-large icon-th"></i>Diseños</a></li>
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/disenos";?>"><i class="icon-large icon-th"></i>Diseños</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/marcas";?>"><i class="icon-large icon-th"></i>Marcas</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/testimonios";?>"><i class="icon-large icon-th"></i>Testimonios</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/software";?>"><i class="icon-large icon-th"></i>Software</a></li>

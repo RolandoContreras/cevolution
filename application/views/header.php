@@ -74,15 +74,15 @@
                         <a href="<?php echo site_url();?>">Inicio</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url().'about';?>">Acerca</a>
+                        <a href="#">Acerca</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url().'service';?>">Servicios</a>
+                        <a href="#">Servicios</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url().'work';?>">Portafolio</a>
+                        <a href="#">Portafolio</a>
                     </li>
-                    <li><a href="<?php echo site_url().'contact';?>">Contacto</a>
+                    <li><a href="#">Contacto</a>
                     </li>
                   </ul>
                 </div>

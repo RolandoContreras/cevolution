@@ -96,8 +96,6 @@ $route['dashboard/panel/guardar_btc'] = "panel/guardar_btc";
 $route['dashboard/panel/masive_messages'] = "panel/masive_messages";
 
 //SECTION
-$route['dashboard/about'] = "d_about";
-
 $route['dashboard/testimonios'] = "d_testimonios";
 $route['dashboard/testimonios/load'] = "d_testimonios/load";
 $route['dashboard/testimonios/delete'] = "d_testimonios/delete";
@@ -109,6 +107,12 @@ $route['dashboard/marcas/load'] = "d_marcas/load";
 $route['dashboard/marcas/load/([0-9]+)'] = "d_marcas/load/$1";
 $route['dashboard/marcas/delete'] = "d_marcas/delete";
 $route['dashboard/marcas/validate'] = "d_marcas/validate";
+
+$route['dashboard/disenos'] = "d_diseños";
+$route['dashboard/disenos/load'] = "d_diseños/load";
+$route['dashboard/disenos/load/([0-9]+)'] = "d_diseños/load/$1";
+$route['dashboard/disenos/delete'] = "d_diseños/delete";
+$route['dashboard/disenos/validate'] = "d_diseños/validate";
 
 $route['dashboard/pagos_diarios'] = "d_pay_dialy";
 $route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";

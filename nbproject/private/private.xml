@@ -19,6 +19,15 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/wamp64/www/cevolution/application/controllers/d_diseños.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/config/routes.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/models/diseño_model.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/views/header.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/views/dashboard/diseños/diseño_list.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/templates/admin_tmp.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/views/home.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/controllers/home.php</file>
+        </group>
     </open-files>
 </project-private>

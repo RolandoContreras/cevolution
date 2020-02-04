@@ -405,7 +405,7 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="CategCategory_2ory_2">
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
                     <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-9-1920x1282.jpg" data-lightgallery="item">
                           <figure>
                               <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-9-418x315.jpg" alt="" width="418" height="315"/>

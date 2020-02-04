@@ -391,49 +391,24 @@
                           </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/slider-slide-14-1280x1920.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-2-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>Objects</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div></a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-9-1920x1282.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-9-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption">
-                            <span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div></a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-4-1920x1920.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-4-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>Objects</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div></a>
-                </div>
+                  <?php 
+                  foreach ($obj_diseños as $value) { ?>
+                        <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
+                            <a class="img-thumbnail-variant-3" href="<?php echo site_url()."static/backoffice/img/diseños/$value->img_2";?>" data-lightgallery="item">
+                                  <figure>
+                                      <img src="<?php echo site_url()."static/backoffice/img/diseños/$value->img";?>" alt="<?php echo $value->name;?>"/>
+                                  </figure>
+                                  <div class="caption">
+                                      <span class="icon lnr lnr-picture"></span>
+                                    <p class="heading-5 hover-top-element"><?php echo $value->name;?></p>
+                                    <div class="divider"></div>
+                                    <p class="small hover-bottom-element">VVisualiza la imagen completa.</p>
+                                    <span class="icon lnr lnr-select"></span>
+                                  </div>
+                            </a>
+                        </div>
+                  <?php } ?>
+                 
                 <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
                     <a class="img-thumbnail-variant-3" href="single-portfolio.html">
                         <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315"/>
@@ -446,51 +421,6 @@
                             <p class="heading-5 hover-top-element">Portfolio Album</p>
                             <div class="divider"></div>
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
-                          </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-6-1920x1539.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-6-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div></a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-7-1280x1920.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-7-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption">
-                              <span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
-                          </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
-                    <a class="img-thumbnail-variant-3" href="https://livedemo00.template-help.com/wt_69536/images/portfolio-original-8-1920x1336.jpg" data-lightgallery="item">
-                          <figure>
-                              <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-8-418x315.jpg" alt="" width="418" height="315"/>
-                          </figure>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Photo</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div>
                     </a>
                 </div>

@@ -50,7 +50,7 @@ class D_diseños extends CI_Controller{
         
         if(isset($_FILES["image_file"]["name"])){
                 $config['upload_path']          = './static/backoffice/img/diseños/';
-                $config['allowed_types']        = 'gif|jpg|png';
+                $config['allowed_types']        = 'gif|jpg|png|jpeg';
                 $config['max_size']             = 3000;
                 $this->load->library('upload', $config);
                     if ( ! $this->upload->do_upload('image_file')){
@@ -67,8 +67,8 @@ class D_diseños extends CI_Controller{
             
         if(isset($_FILES["image_file2"]["name"])){
                 $config['upload_path']          = './static/backoffice/img/diseños/';
-                $config['allowed_types']        = 'gif|jpg|png';
-                $config['max_size']             = 4000;
+                $config['allowed_types']        = 'gif|jpg|png|jpeg';
+                $config['max_size']             = 10000;
                 $this->load->library('upload', $config);
                     if ( ! $this->upload->do_upload('image_file2')){
                          $error = array('error' => $this->upload->display_errors());

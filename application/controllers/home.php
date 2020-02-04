@@ -6,6 +6,7 @@ class Home extends CI_Controller {
         parent::__construct();
         $this->load->model("testimony_model","obj_testimony");
         $this->load->model("marcas_model","obj_marcas");
+        $this->load->model("diseño_model","obj_diseños");
     }   
         
 	/**
@@ -48,6 +49,17 @@ class Home extends CI_Controller {
                         );
            //OBTENER TODOS LOS TESTIMONIOS
            $data['obj_marcas'] = $this->obj_marcas->search($params);
+           //OBTENER LOS DISEÑOS
+           $params = array(
+                        "select" =>"diseños.diseño_id,
+                                    diseños.name,
+                                    diseños.img,
+                                    diseños.img_2",
+                        "where" =>"diseños.active = 1",
+                        "order" =>"diseño_id DESC"
+                        );
+           //OBTENER TODOS LOS TESTIMONIOS
+           $data['obj_diseños'] = $this->obj_diseños->search($params);
            
            //ENVIAR DATA A VISTA
            $this->load->view('home' ,$data);

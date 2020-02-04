@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
     public function __construct(){
         parent::__construct();
-//        $this->load->model("about_model","obj_about");
+        $this->load->model("testimony_model","obj_testimony");
     }   
         
 	/**
@@ -24,7 +24,19 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-//           SEND DATA
-        	$this->load->view('home');
+            //OBTENER TODOS LOS TESTIMONIOS
+           $params = array(
+                        "select" =>"testimony.testimony_id,
+                                    testimony.name,
+                                    testimony.description,
+                                    testimony.date,
+                                    testimony.img,
+                                    testimony.active",
+                        "where" =>"testimony.active = 1"
+                        );
+           //OBTENER TODOS LOS TESTIMONIOS
+           $data['obj_testimony'] = $this->obj_testimony->search($params);
+           //ENVIAR DATA A VISTA
+           $this->load->view('home' ,$data);
 	}
 }

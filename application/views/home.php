@@ -592,18 +592,22 @@
             <h4 class="heading-decorated">QUE DICEN LOS CLIENTES</h4>
             <!-- Owl Carousel-->
             <div class="owl-carousel" data-items="1" data-stage-padding="15" data-loop="true" data-margin="30" data-dots="true" data-nav="false" data-autoplay="true">
-              <div class="item">
-                <!-- Quote default-->
-                <div class="quote-default">
-                  <div class="quote-default__image">
-                      <img src="<?php echo site_url().'static/backoffice/img/testimony/diego.jpg';?>" alt="Diego Vega"/>
-                  </div>
-                  <div class="quote-default__text">
-                    <p class="q">Quiero agradecer a EVOLUCION por el extraordinario trabajo en crear el sistema MLM para mi empresa Cerebrito Digital. Asimismo, agradezco a su CEO Rolando Contreras quien en todo momento nos brindó su apoyo profesional durante todo el proceso; sabemos que contamos con su ayuda y soporte para cualquier eventualidad.</p>
-                  </div>
-                  <p class="quote-default__cite">Diego Vega</p>
-                </div>
-              </div>
+                <?php 
+                foreach ($obj_testimony as $value) { ?>
+                    <div class="item">
+                        <div class="quote-default">
+                          <div class="quote-default__image">
+                              <img src="<?php echo site_url()."static/backoffice/img/testimonios/$value->img";?>" alt="<?php echo $value->name?>"/>
+                          </div>
+                          <div class="quote-default__text">
+                            <p class="q"><?php echo $value->description?></p>
+                          </div>
+                          <p class="quote-default__cite"><?php echo $value->name?></p>
+                        </div>
+                    </div>
+                    
+                <?php } ?>
+             
             </div>
           </div>
         </div>

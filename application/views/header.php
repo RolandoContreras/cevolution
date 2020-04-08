@@ -5,7 +5,9 @@
             <!-- RD Navbar Top Panel-->
             <div class="rd-navbar-top-panel rd-navbar-top-panel-dark">
               <div class="rd-navbar-top-panel__main">
-                <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-top-panel__main"><span></span></div>
+                  <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-top-panel__main">
+                      <span></span>
+                  </div>
                 <div class="rd-navbar-top-panel__content"> 
                   <div class="rd-navbar-top-panel__left">
                     <ul class="rd-navbar-items-list">
@@ -15,7 +17,7 @@
                               <span class="icon-primary icon-sm lnr lnr-apartment"></span>
                           </div>
                           <div class="unit__body">
-                            <p><a href="#">Dirección: Calle los Antares #320 Of. 606, Centro Empresarial el Trigal - Surco</a></p>
+                            <p><a href="#">Dirección: Calle los Antares #320 Of. 606, Centro Empresarial El Trigal - Surco</a></p>
                           </div>
                         </div>
                       </li>

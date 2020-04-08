@@ -375,22 +375,6 @@
                 <li><a data-isotope-filter="Category_2" data-isotope-group="gallery" href="#">Diseños</a></li>
               </ul>
               <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
-                    <a class="img-thumbnail-variant-3" href="single-portfolio.html">
-                        <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-5-418x315.jpg" alt="" width="418" height="315"/>
-                        <span class="label-custom label-white">Enlace</span>
-                          <div class="caption">
-                            <span class="icon hover-top-element linear-icon-folder-picture"></span>
-                            <ul class="list-inline-tag hover-top-element">
-                              <li>9 photos</li>
-                              <li>People</li>
-                            </ul>
-                            <p class="heading-5 hover-top-element">Portfolio Album</p>
-                            <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
-                          </div>
-                    </a>
-                </div>
                   <?php 
                   foreach ($obj_diseños as $value) { ?>
                         <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
@@ -408,9 +392,8 @@
                             </a>
                         </div>
                   <?php } ?>
-                 
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
-                    <a class="img-thumbnail-variant-3" href="single-portfolio.html">
+<!--                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
+                    <a class="img-thumbnail-variant-3" href="<?php echo site_url().'software/cererito-digital'; ?>">
                         <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315"/>
                         <span class="label-custom label-white">Enlace</span>
                           <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
@@ -423,8 +406,8 @@
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div>
                     </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
+                </div>-->
+<!--                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
                     <a class="img-thumbnail-variant-3" href="single-portfolio.html">
                         <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-3-418x315.jpg" alt="" width="418" height="315"/>
                         <span class="label-custom label-white">Enlace</span>
@@ -437,7 +420,7 @@
                             <div class="divider"></div>
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div></a>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>

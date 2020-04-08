@@ -43,7 +43,7 @@ $route['404_override'] = 'errors/error_404';
 
 $route['home'] = 'home';
 $route['login'] = 'login';
-$route['plan/([0-9a-z_-]+)'] = "plan/packages";
+$route['software/([0-9a-z_-]+)'] = 'software/detail';
 
 $route['backoffice'] = "b_home";
 $route['backoffice/productos'] = "b_product";

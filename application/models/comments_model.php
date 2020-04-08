@@ -22,7 +22,7 @@ class comments_model_atributos{
     var $subject='';
     var $comment='';
     var $date_comment='';
-    var $active='';
+    var $status_value='';
     var $updated_at='';
     var $updated_by='';
 }
@@ -39,7 +39,7 @@ class Comments_Model extends CI_Model{
         $this->subject='';
         $this->comment='';
         $this->date_comment='';
-	$this->active='';
+	$this->status_value='';
         $this->updated_at='';
         $this->updated_by='';
 	$this->fields = new comments_model_atributos();

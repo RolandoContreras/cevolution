@@ -21,4 +21,10 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/font.css';?>">
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script>
+        var site = '<?php echo site_url();?>';
+    </script>
+    <!--//swetaler2-->
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
   </head>

@@ -26,7 +26,7 @@ class Contact extends CI_Controller {
 	{
 		$this->load->view('contact');
 	}
-        public function send_messages(){
+        public function enviar_mensage(){
             if($this->input->is_ajax_request()){ 
                 
                 $name = $this->input->post('name');  
@@ -34,19 +34,6 @@ class Contact extends CI_Controller {
                 $subject = $this->input->post('subject');  
                 $message = $this->input->post('message');  
                 
-                
-                //validate background
-                $this->form_validation->set_rules('name','name',"required|trim");
-                $this->form_validation->set_rules('email','email','required|trim'); 
-                $this->form_validation->set_rules('subject','subject','required|trim'); 
-                $this->form_validation->set_rules('message','message','required');              
-                $this->form_validation->set_message('required','Campo requerido %s');   
-
-                
-                if ($this->form_validation->run($this)== false){ 
-                    $data['message'] = "false";
-                    $data['print'] = "Complete todos los datos correctamente";
-                }else{
                     //status_value 0 means (not read)
                     $data = array(
                         'name' => $name,
@@ -54,14 +41,92 @@ class Contact extends CI_Controller {
                         'comment' => $message,
                         'subject' => $subject,
                         'date_comment' => date("Y-m-d H:i:s"),
-                        'status_value' => 0,
+                        'status_value' => 1,
                     );
-                    $this->obj_comments->insert($data);
-                    $data['print'] = "Mensaje enviado correctamente";
-                    $data['message'] = "true";       
-                }         
+                    $comment_id = $this->obj_comments->insert($data);
+                    if($comment_id != null){
+                        $data['message'] = true; 
+                        //enviar mensaje de confirmación al correo
+                        $this->message($name, $email, $subject, $message);
+                    }else{
+                        $data['message'] = false;       
+                    }
                 echo json_encode($data);  
                 exit();      
             }
-        }   
+        } 
+        
+        public function message($name, $email, $subject, $message){    
+                $mensaje = wordwrap("<html>
+                     <div bgcolor='#E9E9E9' style='background:#fff;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                      <table style='background-color:#fff;border-collapse:collapse;margin:0;padding:0' width='100%' height='100%' cellspacing='0' cellpadding='0' border='0'
+                        align='center'>
+                        <tbody>
+                          <tr>
+                            <td valign='top' align='center'>
+                              <table style='border-collapse:collapse;margin:0;padding:0;max-width:600px' width='100%' height='100%' cellspacing='0' cellpadding='0' border='0' align='center'>
+                                <tbody>
+                                  <tr>
+                                    <td style='padding:39px 30px 31px;display:block;background:#fafafa'> 
+                                    <p style='padding:32px 32px 0;color:#333333;background:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;line-height:14px;margin:0;font-size:14px;border-radius:5px 5px 0 0'
+                                        align='left'>Hola Rolando, tienes un mensaje de $name</p> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style='padding:0 30px;display:block;background:#fafafa'>
+                                      <table style='width:100%;border-collapse:collapse;padding:0' width='100%' height='100%' cellspacing='0' cellpadding='0' border='0' align='center'>
+                                        <tbody>
+                                          <tr>
+                                            <td style='padding:0;background-color:#fff;border-radius:0 0 5px 5px;padding:32px'>
+                                              <p style='margin:0;padding-bottom:20px;color:#333333;line-height:22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                                              A través de la sección contacto el sr(a) $name se ha comunicado contigo</p>
+                                              <p style='margin:0 0 24px;padding:16px;border-radius:5px;padding-bottom:20px;background:#f7f7f7;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                                              <span style='display:block;padding-bottom:8px'><span style='width:101px;display:inline-block'>Nombre: </span><strong>$name</strong></span>
+                                              </p> 
+                                              <p style='margin:0 0 24px;padding:16px;border-radius:5px;padding-bottom:20px;background:#f7f7f7;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                                              <span style='display:block;padding-bottom:8px'><span style='width:101px;display:inline-block'>Email: </span><strong>$email</strong></span>
+                                              </p> 
+                                              <p style='margin:0 0 24px;padding:16px;border-radius:5px;padding-bottom:20px;background:#f7f7f7;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                                              <span style='display:block;padding-bottom:8px'><span style='width:101px;display:inline-block'>Asunto: </span><strong>$subject</strong></span>
+                                              </p> 
+                                              <p style='margin:0 0 24px;padding:16px;border-radius:5px;padding-bottom:20px;background:#f7f7f7;color:#333333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
+                                              <span style='display:block;padding-bottom:8px'><span style='width:101px;display:inline-block'>Mensaje: </span><strong>$message</strong></span>
+                                              </p> 
+                                              <a href='https://evolucionweb.tech/dashboard' style='background:#2d6ced;color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px;display:inline-block;padding:12px 17px;text-decoration:none;border-radius:5px'
+                                                target='_blank'>Iniciar Sesión - Dashboard</a>                          
+                                              </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style='padding:30px 30px 0;display:block;background:#fafafa'>
+                                      <table style='width:100%;border-collapse:collapse;padding:0;text-align:center' width='100%' height='100%' cellspacing='0' cellpadding='0'
+                                        border='0' align='center'>
+                                        <tbody>
+                                          <tr>
+                                            <td style='max-width:290px;display:inline-block;padding:0 19px 30px;box-sizing:border-box;text-align:left'>
+                                              <p style='margin:0;text-align:center;line-height:20px;color:#888888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:12px'>
+                                              Visítanos en  <a href='https://u-linex.com' style='color:#2d6ced;text-decoration:none' target='_blank'>www.u-linex.com</a></p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                            .</html>", 70, "\n", true);
+                    $titulo = "Contacto - $subject";
+                    $headers = "MIME-Version: 1.0\r\n"; 
+                    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+                    $headers .= "From: EVOLUCION WEB <contacto@evolucionweb.tech>\r\n";
+                    $bool = mail("software.contreras@gmail.com",$titulo,$mensaje,$headers);
+    }
 }

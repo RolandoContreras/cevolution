@@ -27,7 +27,8 @@
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-4">
               <h6>Acerca</h6>
-              <p>theFuture is HTML template that fits for both developers and beginners. It comes loaded with an assortment of tools and features that make customization process much easier. A pack of child themes, specially designed for various business niches, allows users to create a fully functional site for any specific business quickly and worry-free.</p>
+              <p>Somos una agencia digital que nos especializamos en crear y posicionar marcas trabajando con los mejores profesionales del medio y de esta forma dando vida a tus sueños.</p>
+              <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo" width="250"/>
             </div>
             
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
@@ -82,7 +83,7 @@
                 <li><a href="<?php echo site_url().'about';?>">Acerca</a></li>
                 <li><a href="<?php echo site_url().'service';?>">Servicios</a></li>
                 <li><a href="<?php echo site_url().'work';?>">Portafolio</a></li>
-                <li><a href="<?php echo site_url().'contact';?>">Contacto</a></li>
+                <li><a href="<?php echo site_url().'contacto';?>">Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -97,9 +98,8 @@
                 <a href="<?php echo site_url().'privacy_policy';?>">Términos y uso de la política de privacidad</a></p>
             <ul class="list-inline-xxs">
                 <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/evolucionweb.tech/" target="_blank"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-instagram" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-instagram" href="https://www.instagram.com/evolucion.web/" target="_blank"></a></li>
             </ul>
           </div>
         </div>

@@ -38,13 +38,13 @@
                   <div class="rd-navbar-top-panel__right">
                     <ul class="list-inline-xxs">
                       <li>
-                          <a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="https://www.facebook.com/pg/evolucionweb.tech" target=""></a>
+                          <a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="https://www.facebook.com/pg/evolucionweb.tech" target="_blank"></a>
                       </li>
                       <li>
                           <a class="icon icon-xxs icon-gray-darker fa fa-youtube" href="#" target=""></a>
                       </li>
                       <li>
-                          <a class="icon icon-xxs icon-gray-darker fa fa-instagram" href="#" target=""></a>
+                          <a class="icon icon-xxs icon-gray-darker fa fa-instagram" href="https://www.instagram.com/evolucion.web/" target="_blank"></a>
                       </li>
                     </ul>
                   </div>
@@ -84,7 +84,7 @@
                     <li>
                         <a href="#">Portafolio</a>
                     </li>
-                    <li><a href="#">Contacto</a>
+                    <li><a href="<?php echo site_url().'contacto';?>">Contacto</a>
                     </li>
                   </ul>
                 </div>

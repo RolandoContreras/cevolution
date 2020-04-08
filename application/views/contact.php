@@ -107,23 +107,16 @@
             </div> 
             <div class="row">
               <div class="col">
-                    <div class="g-recaptcha" data-sitekey="6Lfql9EUAAAAAOijHIuhHoq8ZrcDN8GeTX-95onx"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lc67ecUAAAAACsHd6dEfMsbhVAXWy4CCNwZFh3j"></div>
+              </div>
+                <div class="col">
+                    <div id="respose"></div>
               </div>
             </div>
             <button class="button button-primary button-shadow" type="submit">Enviar Mensaje</button> 
           </form>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <!-- RD Google Map-->
-    <div class="google-map-container" data-zoom="5" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
-      <div class="google-map"></div>
-      <ul class="google-map-markers">
-        <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow" data-icon="images/gmap_marker.png"
-          data-icon-active="images/gmap_marker_active.png"></li>
-      </ul>
     </div>
   </section>
  <!-- Page Footer -->

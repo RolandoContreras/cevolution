@@ -45,6 +45,11 @@ $route['home'] = 'home';
 $route['login'] = 'login';
 $route['software/([0-9a-z_-]+)'] = 'software/detail';
 
+$route['contacto'] = 'contact';
+$route['contacto'] = 'contact';
+$route['contacto/enviar_mensage'] = 'contact/enviar_mensage';
+
+
 $route['backoffice'] = "b_home";
 $route['backoffice/productos'] = "b_product";
 $route['backoffice/profile'] = "b_data";

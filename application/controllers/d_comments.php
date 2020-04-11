@@ -41,14 +41,17 @@ class D_comments extends CI_Controller{
             //UPDATE DATA ORDERS
         if($this->input->is_ajax_request()){   
               $comment_id = $this->input->post("comment_id");
-              
-                if(count($comment_id) > 0){
+                if($comment_id != null){
                     $data = array(
-                        'status_value' => 1,
+                        'status_value' => 0,
                         'updated_at' => date("Y-m-d H:i:s"),
                         'updated_by' => $_SESSION['usercms']['user_id'],
                     ); 
                     $this->obj_comments->update($comment_id,$data);
+                    //enviar informacion
+                    $data["message"] = true;
+                }else{
+                    $data["message"] = false;
                 }
                 echo json_encode($data);            
         exit();
@@ -59,13 +62,16 @@ class D_comments extends CI_Controller{
             //UPDATE DATA ORDERS
         if($this->input->is_ajax_request()){   
                 $comment_id = $this->input->post("comment_id");
-                if(count($comment_id) > 0){
+                if($comment_id != null){
                     $data = array(
-                        'status_value' => 0,
+                        'status_value' => 1,
                         'updated_at' => date("Y-m-d H:i:s"),
                         'updated_by' => $_SESSION['usercms']['user_id'],
                     ); 
                     $this->obj_comments->update($comment_id,$data);
+                     $data["message"] = true;
+               }else{
+                    $data["message"] = false;
                 }
                 echo json_encode($data);            
         exit();

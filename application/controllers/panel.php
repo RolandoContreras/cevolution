@@ -12,12 +12,15 @@ class Panel extends CI_Controller{
 
          //GET PENDING ROWS
         $params = array("select" =>"count(*) as pending_comments",
-                        "where" => "active = 1");
+                        "where" => "status_value = 1");
         $obj_pending = $this->obj_comments->get_search_row($params);
             
         //GET TOTAL ROWS
         $params = array("select" =>"count(comment_id) as total_comments,
-                                    (select count(*) from testimony where active = 1) as total_testimony,"
+                                    (select count(*) from diseños) as total_diseños,
+                                    (select count(*) from marcas) as total_marcas,
+                                    (select count(*) from category) as total_categorias,
+                                    (select count(*) from testimony) as total_testimony"
                                     );
         $obj_total = $this->obj_comments->get_search_row($params);
         

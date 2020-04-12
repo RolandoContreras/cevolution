@@ -63,7 +63,7 @@
                     <h2 class="text-white" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 500 }">Construido por especialistas para ti</h2>
                     <h5 class="text-white text-width-2 block-centered" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 700 }">Evolución tiene como objetivo satisfacer las necesidades reales de proyectos reales.</h5>
                     <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 900 }">
-                        <a class="button button-black button-shadow" href="#about" data-custom-scroll-to="features">Iniciar Recorrido</a>
+                        <a class="button button-black button-shadow" href="#about" data-custom-scroll-to="features">Probar DEMO</a>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                 <h1 class="text-white bg-accent p-2 pt-lg-3 pl-lg-3 pr-lg-3" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 400 }"><span class="text-lowercase heading-4 text-white">web</span><span>EVOLUCIÓN</span></h1>
                 <h4 class="text-white text-left mt-1" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 600 }">Contruye tus sueños</h4>
                 <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 800 }">
-                    <a class="button button-primary button-shadow" href="#features" data-custom-scroll-to="features">Iniciar Recorrido</a>
+                    <a class="button button-primary button-shadow" href="#features" data-custom-scroll-to="features">Probar DEMO</a>
                 </div>
               </div>
             </div>

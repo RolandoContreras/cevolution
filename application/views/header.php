@@ -76,16 +76,21 @@
                         <a href="<?php echo site_url();?>">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Acerca</a>
-                    </li>
-                    <li>
                         <a href="#">Servicios</a>
                     </li>
                     <li>
                         <a href="#">Portafolio</a>
                     </li>
-                    <li><a href="<?php echo site_url().'contacto';?>">Contacto</a>
+                    <li>
+                        <a href="<?php echo site_url().'contacto';?>">Contacto</a>
                     </li>
+                    <li>
+                        <a class="button button-primary button-shadow margin-top-11" href="#features">PROBAR DEMO</a>
+                    </li>
+                    
+<!--                    <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentRide&quot;, &quot;duration&quot;: 800, &quot;delay&quot;: 800 }" style="opacity: 1; transform: translateX(0px);">
+                    
+                </div>-->
                   </ul>
                 </div>
               </div>

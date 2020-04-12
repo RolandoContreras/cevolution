@@ -80,9 +80,9 @@
               <h6>Mapa</h6>
               <ul class="list-xxs">
                 <li><a href="<?php echo site_url();?>">Inicio</a></li>
-                <li><a href="<?php echo site_url().'about';?>">Acerca</a></li>
-                <li><a href="<?php echo site_url().'service';?>">Servicios</a></li>
-                <li><a href="<?php echo site_url().'work';?>">Portafolio</a></li>
+                <li><a href="<?php echo site_url().'demo';?>">DEMO</a></li>
+                <li><a href="<?php echo site_url().'servicios';?>">Servicios</a></li>
+                <li><a href="<?php echo site_url().'portafolio';?>">Portafolio</a></li>
                 <li><a href="<?php echo site_url().'contacto';?>">Contacto</a></li>
               </ul>
             </div>

@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/bootstrap.css';?>">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/style.css';?>">
+    <!--mi stylo-->
+    <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/my_style.css';?>">
     <script src="https://use.fontawesome.com/bd71157fab.js"></script>
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/font.css';?>">

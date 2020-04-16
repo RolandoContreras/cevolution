@@ -29,14 +29,14 @@
      <?php $this->load->view("header");?>
       <!-- Parallax header-->
       <section>
-        <section class="section parallax-container context-dark" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/parallax-1.jpg">
+        <section class="section parallax-container context-dark" data-parallax-img="<?php echo site_url().'static/page_front/images/header_image.jpg';?>">
           <div class="parallax-content parallax-header">
             <div class="parallax-header__inner context-dark">
               <div class="parallax-header__content">
                 <div class="container">
                   <div class="row justify-content-sm-center">
                     <div class="col-md-10 col-xl-8">
-                      <h2 class="heading-decorated">Privacy Policy</h2>
+                      <h2 class="heading-decorated">Terminos y Política de privacidad</h2>
                     </div>
                   </div>
                 </div>

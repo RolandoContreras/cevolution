@@ -12,6 +12,16 @@ class Demo extends CI_Controller{
             $this->load->view('demo/login');
     }
     
+    public function home(){  
+        //llevar a login demo
+//        $this->tmp_demo->set("obj_message",$obj_message);
+        $this->tmp_demo->render("backoffice/b_home");
+        $this->load->view('demo/home');
+    }
+    
+    
+    
+    
     public function change_status(){
             //UPDATE DATA ORDERS
         if($this->input->is_ajax_request()){   

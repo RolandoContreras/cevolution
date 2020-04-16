@@ -15,7 +15,6 @@
         js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
         attribution=setup_tool
@@ -34,11 +33,11 @@
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
               <h6>Servicios</h6>
               <ul class="list-xxs">
-                <li><a href="#">Retina Homepage</a></li>
-                <li><a href="#">New Page Examples</a></li>
-                <li><a href="#">Parallax Sections</a></li>
-                <li><a href="#">Shortcode Central</a></li>
-                <li><a href="#">Ultimate Font Collection</a></li>
+                <li><a href="#">Software a Medida</a></li>
+                <li><a href="#">Software Multinivel</a></li>
+                <li><a href="#">Diseños</a></li>
+                <li><a href="#">Creación de Logos</a></li>
+                <li><a href="#">Sistemas de Prospección</a></li>
               </ul>
             </div>
               
@@ -47,17 +46,17 @@
               <ul class="list-xs">
                 <li>
                   <dl class="list-terms-minimal">
-                    <dt>Address</dt>
-                    <dd>4578 Marmora Road, Glasgow, D04 89GR</dd>
+                    <dt>Dirección</dt>
+                    <dd>Calle Los Antares #320, Trigal - Surco</dd>
                   </dl>
                 </li>
                 <li>
                   <dl class="list-terms-minimal">
-                    <dt>Phones </dt>
+                    <dt>Teléfonos </dt>
                     <dd>
                       <ul class="list-semicolon">
-                        <li><a href="tel:#">(800) 123-0045</a></li>
-                        <li><a href="tel:#">(800) 123-0045</a></li>
+                          <li><a href="#">(51) 929 498 649</a></li>
+                          <li><a href="#">(51) 1 409 5566</a></li>
                       </ul>
                     </dd>
                   </dl>
@@ -65,13 +64,13 @@
                 <li>
                   <dl class="list-terms-minimal">
                     <dt>E-mail</dt>
-                    <dd><a href="mailto:#">info@demolink.org</a></dd>
+                    <dd><a href="#">info@demolink.org</a></dd>
                   </dl>
                 </li>
                 <li>
                   <dl class="list-terms-minimal">
-                    <dt>We are open</dt>
-                    <dd>Mn-Fr: 10 am-8 pm</dd>
+                    <dt>Comunicación</dt>
+                    <dd>24 horas</dd>
                   </dl>
                 </li>
               </ul>
@@ -94,8 +93,8 @@
           <div class="footer-corporate__inner">
             <p class="rights">
                 <span>Evolution</span><span>&nbsp;</span>
-                <span class="copyright-year"></span>. All Rights Reserved.
-                <a href="<?php echo site_url().'privacy_policy';?>">Términos y uso de la política de privacidad</a></p>
+                <span class="copyright-year"></span>. Todos los derechos reservados.
+                <a href="<?php echo site_url().'privacy_policy';?>"><b>Términos y uso de la política de privacidad</b></a></p>
             <ul class="list-inline-xxs">
                 <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/evolucionweb.tech/" target="_blank"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>

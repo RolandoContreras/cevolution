@@ -20,12 +20,17 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/cevolution/application/views/footer.php</file>
-            <file>file:/C:/wamp64/www/cevolution/static/page_front/css/my_style.css</file>
-            <file>file:/C:/wamp64/www/cevolution/application/views/header.php</file>
-            <file>file:/C:/wamp64/www/cevolution/static/page_front/css/style.css</file>
-            <file>file:/C:/wamp64/www/cevolution/application/views/home.php</file>
+            <file>file:/C:/wamp64/www/cevolution/static/demo/js/plugins/bootstrap/bootstrap.min.js</file>
+            <file>file:/C:/wamp64/www/cevolution/application/views/demo/home.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/config/autoload.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/controllers/demo.php</file>
+            <file>file:/C:/wamp64/www/cevolution/static/demo/js/pcoded.min.js</file>
+            <file>file:/C:/wamp64/www/cevolution/application/config/routes.php</file>
+            <file>file:/C:/wamp64/www/cevolution/static/demo/js/vendor-all.min.js</file>
+            <file>file:/C:/wamp64/www/cevolution/application/views/demo/login.php</file>
             <file>file:/C:/wamp64/www/cevolution/application/views/head.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/templates/demo_tmp.php</file>
+            <file>file:/C:/wamp64/www/cevolution/application/controllers/d_testimonios.php</file>
         </group>
     </open-files>
 </project-private>

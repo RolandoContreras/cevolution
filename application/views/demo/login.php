@@ -41,11 +41,15 @@
                             <i class="feather-unlock auth-icon"></i>
                         </div>
                         <h3 class="mb-4">Iniciar Sesión</h3>
+                        <div class="alert alert-primary" role="alert">
+                            <b>Usuario:</b> demo<br/>
+                            <b>Password:</b> demo
+                        </div>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="text" id="username" class="form-control" placeholder="Usuario">
                         </div>
                         <div class="input-group mb-4">
-                            <input type="password" class="form-control" placeholder="password">
+                            <input type="password" id="password" class="form-control" placeholder="password">
                         </div>
                         <div class="form-group text-left">
                                 <div class="new-task">
@@ -69,9 +73,9 @@
                 </div>
             </div>
         </div>
-
-        <script src="http://html.codedthemes.com/datta-able/bootstrap/assets/js/vendor-all.min.js"></script>
-        <script src="http://html.codedthemes.com/datta-able/bootstrap/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="http://html.codedthemes.com/datta-able/bootstrap/assets/js/pcoded.min.js"></script>
+        <script src="<?php echo site_url() . 'static/demo/js/vendor-all.min.js';?>"></script>
+        <script src="<?php echo site_url() . 'static/demo/js/vendor-all.min.js';?>"></script>
+        <script src="<?php echo site_url() . 'static/demo/js/plugins/bootstrap/bootstrap.min.js';?>"></script>
+        <script src="<?php echo site_url() . 'static/demo/js/pcoded.min.js';?>"></script>
     </body>
 </html>

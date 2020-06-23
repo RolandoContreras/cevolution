@@ -33,6 +33,7 @@ class Home extends CI_Controller {
                                     testimony.description,
                                     testimony.date,
                                     testimony.img,
+                                    testimony.web,
                                     testimony.active",
                         "where" =>"testimony.active = 1",
                         "order" =>"testimony_id DESC"

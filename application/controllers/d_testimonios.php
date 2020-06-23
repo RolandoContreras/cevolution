@@ -16,7 +16,9 @@ class D_testimonios extends CI_Controller{
                                     testimony.description,
                                     testimony.date,
                                     testimony.img,
+                                    testimony.web,
                                     testimony.active",
+               
                         );
            //OBTENER TODOS LOS TESTIMONIOS
            $obj_testimony = $this->obj_testimony->search($params);
@@ -55,6 +57,7 @@ class D_testimonios extends CI_Controller{
                 'name' => $name,
                 'img' => $img,
                 'description' => $description, 
+                'web' => $this->input->post("web"), 
                 'date' => date("Y-m-d H:i:s"),  
                 'active' => $active,  
                 'updated_at' => date("Y-m-d H:i:s"),
@@ -66,6 +69,7 @@ class D_testimonios extends CI_Controller{
                 'name' => $name,
                 'img' => $img,
                 'description' => $description, 
+                'web' => $this->input->post("web"), 
                 'date' => date("Y-m-d H:i:s"),  
                 'active' => $active,  
                 );          

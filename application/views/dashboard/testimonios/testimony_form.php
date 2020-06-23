@@ -46,11 +46,11 @@
                           <div class="form-group col-md-6">
                               <div class="form-group">
                                 <label>Nombre</label>
-                                <input class="form-control" type="text" id="name" name="name" value="<?php echo isset($obj_testimony->name)?$obj_testimony->name:"";?>" class="input-xlarge-fluid" placeholder="Cliente">
+                                <input class="form-control" type="text" id="name" name="name" value="<?php echo isset($obj_testimony->name)?$obj_testimony->name:"";?>" class="input-xlarge-fluid" placeholder="Cliente" required="">
                               </div>
                               <div class="form-group">
                                   <label>Descripción</label>
-                                  <textarea name="description" id="description"><?php echo isset($obj_testimony->description)?$obj_testimony->description:"";?></textarea>
+                                  <textarea name="description" id="description" required=""><?php echo isset($obj_testimony->description)?$obj_testimony->description:"";?></textarea>
                                     <script>
                                             CKEDITOR.replace('description');
                                     </script>
@@ -72,10 +72,13 @@
                                         <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
                                     </div>
                               </div>
-                              <br/>
+                              <div class="form-group">
+                                <label>Web</label>
+                                <input class="form-control" type="text" id="web" name="web" value="<?php echo isset($obj_testimony->web)?$obj_testimony->web:"";?>" class="input-xlarge-fluid" placeholder="Web" required="">
+                              </div>
                               <div class="form-group">
                                 <label for="inputState">Estado</label>
-                                    <select name="active" id="active" class="form-control">
+                                <select name="active" id="active" class="form-control" required="">
                                      <option value="">[ Seleccionar ]</option>
                                       <option value="1" <?php if(isset($obj_testimony)){
                                           if($obj_testimony->active == 1){ echo "selected";}

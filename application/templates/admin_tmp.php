@@ -57,7 +57,7 @@
           <div class="b-bg">
               <img src="<?php echo site_url().'static/page_front/images/logo/logo_face.png';?>" alt="Logo" width="40"/>
           </div>
-              <span class="b-title">Administración</span>
+              <span class="b-title">Evolución Web</span>
           </a>
           <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a></div>
       <div class="navbar-content scroll-div">
@@ -71,34 +71,14 @@
                 $nav = "";
             }
             $panel_syle = "";
-            $pagos_syle = "";
+            $marketing_syle = "";
             $mantenimiento_syle = "";
-            $report_syle = "";
-            $activaciones_syle = "";
             switch ($nav) {
                 case "panel":
                     $panel_syle = "active";
                     break;
-                case "activar_pagos":
-                    $pagos_syle = "active";
-                    break;
-                case "activaciones":
-                    $activaciones_syle = "active";
-                    break;
-                case "activaciones_recompra":
-                    $activaciones_syle = "active";
-                    break;
-                 case "report_global":
-                    $report_syle = "active";
-                    break;
-                case "report_customer":
-                    $report_syle = "active";
-                    break;
-                case "report_invoice":
-                    $report_syle = "active";
-                    break;
-                case "report_pay":
-                    $report_syle = "active";
+                case "marketing":
+                    $marketing_syle = "active";
                     break;
                 default:
                     $mantenimiento_syle = "active";
@@ -113,6 +93,7 @@
                   <span class="pcoded-mtext">Panel</span>
               </a>
         </li>
+        <li class="nav-item pcoded-menu-caption"><label>Mantenimientos</label></li>
         <li class="nav-item pcoded-hasmenu">
             <a href="#!" class="<?php echo $mantenimiento_syle;?>">
                 <span class="pcoded-micon">
@@ -131,39 +112,14 @@
                 <?php } ?>
             </ul>
         </li>
+        <li class="nav-item pcoded-menu-caption"><label>Email Marketing</label></li>
         <li class="nav-item pcoded-hasmenu">
-            <a href="#!" class="nav-link <?php echo $activaciones_syle;?>">
+            <a href="<?php echo site_url().'dashboard/marketing'?>" class="<?php echo $marketing_syle;?>">
                 <span class="pcoded-micon">
-                    <i data-feather="check-circle"></i>
+                    <i data-feather="mail"></i>
                 </span>
-                <span class="pcoded-mtext">Activaciones</span>
+                <span class="pcoded-mtext">Email Marketing</span>
             </a>
-            <ul class="pcoded-submenu">
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/activaciones";?>"><i class="icon-large icon-th"></i>Membresías</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/activaciones_recompra";?>"><i class="icon-large icon-th"></i>Re-Compra</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="<?php echo site_url()."dashboard/activar_pagos";?>" class="nav-link <?php echo $pagos_syle;?>">
-                <span class="pcoded-micon">
-                    <i data-feather="dollar-sign"></i>
-                </span>
-                <span class="pcoded-mtext">Pagos</span>
-            </a>
-        </li>
-        <li class="nav-item pcoded-hasmenu">
-            <a href="#!" class="nav-link <?php echo $report_syle;?>">
-                <span class="pcoded-micon">
-                    <i data-feather="printer"></i>
-                </span>
-                <span class="pcoded-mtext">Reportes</span>
-            </a>
-            <ul class="pcoded-submenu">
-                <!--<li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/report_global";?>"><i class="icon-large icon-th"></i>Datos</a></li>-->
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/report_customer";?>"><i class="icon-large icon-th"></i>Clientes</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/report_invoice";?>"><i class="icon-large icon-th"></i>Ventas</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/report_pay";?>"><i class="icon-large icon-th"></i>Pagos</a></li>
-            </ul>
         </li>
     </ul>
     </div>
@@ -175,7 +131,7 @@
         <div class="b-bg">
             <img src="<?php echo site_url().'static/page_front/images/logo/logo_face.png';?>" alt="Logo" width="40"/>
         </div>
-            <span class="b-title">BCA CAPITAL</span></a>
+            <span class="b-title">Evolucion Web</span></a>
     </div>
       <a class="mobile-menu" id="mobile-header" href="#!">
           <i class="feather icon-more-horizontal"></i>
@@ -217,20 +173,9 @@
 <script src="<?php echo site_url().'static/cms/js/core/ac-lightbox.js';?>"></script>
 <script src="<?php echo site_url().'static/cms/js/core/datatables.min.js';?>"></script>
 <script src="<?php echo site_url().'static/cms/js/core/tbl-datatable-custom.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/amcharts.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/gauge.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/serial.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/light.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/pie.min.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/ammap.min.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/usaLow.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/radar.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/worldLow.js';?>"></script>
 <script src="<?php echo site_url().'static/cms/js/core/jquery.flot.js';?>"></script>
 <script src="<?php echo site_url().'static/cms/js/core/jquery.flot.categories.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/curvedLines.js';?>"></script>
 <script src="<?php echo site_url().'static/cms/js/core/jquery.flot.tooltip.min.js';?>"></script>
-<script src="<?php echo site_url().'static/cms/js/core/dashboard-analytics.js';?>"></script>
 <script>
   feather.replace();
 </script>

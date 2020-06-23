@@ -33,11 +33,11 @@
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
               <h6>Servicios</h6>
               <ul class="list-xxs">
-                <li><a href="#">Software a Medida</a></li>
-                <li><a href="#">Software Multinivel</a></li>
-                <li><a href="#">Diseños</a></li>
-                <li><a href="#">Creación de Logos</a></li>
-                <li><a href="#">Sistemas de Prospección</a></li>
+                <li><a href="#" class="color-white">Software a Medida</a></li>
+                <li><a href="#" class="color-white">Software Multinivel</a></li>
+                <li><a href="#" class="color-white">Diseños</a></li>
+                <li><a href="#" class="color-white">Creación de Logos</a></li>
+                <li><a href="#" class="color-white">Sistemas de Prospección</a></li>
               </ul>
             </div>
               
@@ -45,30 +45,30 @@
               <h6>Contacto</h6>
               <ul class="list-xs">
                 <li>
-                  <dl class="list-terms-minimal">
+                  <dl class="list-terms-minimal color-white">
                     <dt>Dirección</dt>
                     <dd>Calle Los Antares #320, Trigal - Surco</dd>
                   </dl>
                 </li>
                 <li>
-                  <dl class="list-terms-minimal">
+                  <dl class="list-terms-minimal color-white">
                     <dt>Teléfonos </dt>
                     <dd>
                       <ul class="list-semicolon">
-                          <li><a href="#">(51) 929 498 649</a></li>
-                          <li><a href="#">(51) 1 409 5566</a></li>
+                          <li><a class="color-white"href="#">(51) 929 498 649</a></li>
+                          <li><a class="color-white" href="#">(51) 1 409 5566</a></li>
                       </ul>
                     </dd>
                   </dl>
                 </li>
                 <li>
-                  <dl class="list-terms-minimal">
+                  <dl class="list-terms-minimal color-white">
                     <dt>E-mail</dt>
-                    <dd><a href="#">info@demolink.org</a></dd>
+                    <dd><a class="color-white" href="#">info@demolink.org</a></dd>
                   </dl>
                 </li>
                 <li>
-                  <dl class="list-terms-minimal">
+                  <dl class="list-terms-minimal color-white">
                     <dt>Comunicación</dt>
                     <dd>24 horas</dd>
                   </dl>
@@ -78,11 +78,11 @@
               <div class="col-sm-10 col-md-6 col-lg-3 col-xl-2">
               <h6>Mapa</h6>
               <ul class="list-xxs">
-                <li><a href="<?php echo site_url();?>">Inicio</a></li>
-                <li><a href="<?php echo site_url().'demo';?>">DEMO</a></li>
-                <li><a href="<?php echo site_url().'servicios';?>">Servicios</a></li>
-                <li><a href="<?php echo site_url().'portafolio';?>">Portafolio</a></li>
-                <li><a href="<?php echo site_url().'contacto';?>">Contacto</a></li>
+                <li><a class="color-white" href="<?php echo site_url();?>">Inicio</a></li>
+                <li><a class="color-white" href="<?php echo site_url().'demo';?>">DEMO</a></li>
+                <li><a class="color-white" href="<?php echo site_url().'servicios';?>">Servicios</a></li>
+                <li><a class="color-white" href="<?php echo site_url().'portafolio';?>">Portafolio</a></li>
+                <li><a class="color-white" href="<?php echo site_url().'contacto';?>">Contacto</a></li>
               </ul>
             </div>
           </div>

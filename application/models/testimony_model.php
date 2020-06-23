@@ -21,6 +21,7 @@ class testimony_model_atributos{
     var $description='';
     var $date='';
     var $img='';
+    var $web='';
     var $active='';
     var $status_value='';
     var $updated_at='';
@@ -38,6 +39,7 @@ class Testimony_Model extends CI_Model{
         $this->description='';
         $this->date='';
         $this->img='';
+        $this->web='';
 	$this->active='';
         $this->status_value='';
         $this->updated_at='';

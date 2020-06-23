@@ -36,7 +36,7 @@
                 <li><a href="#" class="color-white">Software a Medida</a></li>
                 <li><a href="#" class="color-white">Software Multinivel</a></li>
                 <li><a href="#" class="color-white">Diseños</a></li>
-                <li><a href="#" class="color-white">Creación de Logos</a></li>
+                <li><a href="#" class="color-white">Plataforma de Cursos Online</a></li>
                 <li><a href="#" class="color-white">Sistemas de Prospección</a></li>
               </ul>
             </div>

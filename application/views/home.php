@@ -516,7 +516,7 @@
                             <p class="q"><?php echo $value->description?></p>
                           </div>
                           <p class="quote-default__cite"><?php echo $value->name;?></p>
-                          <p class="q"><a class="color-white" href="<?php echo $value->web;?>" target="_blank"><?php echo $value->web;?></a></p>
+                          <p class="q"><?php echo $value->web;?></p>
                         </div>
                     </div>
                     

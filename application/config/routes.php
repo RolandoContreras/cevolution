@@ -62,43 +62,9 @@ $route['backoffice/upgrade'] = "b_upgrade";
 $route['backoffice/binario'] = "b_binario";
 $route['backoffice/binario/([0-9a-z_-]+)'] = "b_binario/index/$1";
 
-$route['backoffice/academy'] = "b_academy";
-$route['backoffice/academy/courses'] = "b_academy/courses";
-$route['backoffice/academy/courses/([0-9a-z_-]+)'] = "b_academy/courses//$1";
-
-$route['backoffice/messages'] = "b_messages";
-$route['backoffice/messages/bonus'] = "b_messages/message_type";
-$route['backoffice/messages/bonus/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
-$route['backoffice/messages/support'] = "b_messages/message_type";
-$route['backoffice/messages/support/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
-$route['backoffice/messages/social'] = "b_messages/message_type";
-$route['backoffice/messages/social/([0-9a-z_-]+)'] = "b_messages/message_type/$1";
-
 $route['backoffice/compose_message'] = "b_messages/compose_message"; 
-
-
-$route['backoffice/unilevel'] = "b_unilevel";
-$route['backoffice/unilevel/([0-9a-z_-]+)'] = "b_unilevel/index/$1";
-
-$route['backoffice/comisiones'] = "b_comissions";
-//$route['backoffice/comisiones/consultar'] = "b_comissions/consultar";
-$route['backoffice/comisiones/pay_dialy'] = "b_comissions/index/$1";
-$route['backoffice/comisiones/binary'] = "b_comissions/index/$1";
-$route['backoffice/comisiones/referred'] = "b_comissions/index/$1";
-
-$route['backoffice/billetera'] = "b_wallet";
-$route['backoffice/cobros'] = "b_pay";
-$route['backoffice/pagos/validar'] = "b_pay/validate";
-
-$route['backoffice/message_confirmation'] = "b_message_confirmation";
-$route['backoffice/message_confirmation/upload'] = "b_message_confirmation/upload";
-
 $route['logout'] = "b_home/logout";
-$route['backoffice/misdatos'] = "b_data";
 
-$route['register/afiliate/([0-9a-z_-]+)'] = "register/index/$1";
 
 $route['dashboard'] = "dashboard";
 $route['dashboard/panel'] = "panel";
@@ -106,6 +72,12 @@ $route['dashboard/panel/guardar_btc'] = "panel/guardar_btc";
 $route['dashboard/panel/masive_messages'] = "panel/masive_messages";
 
 //SECTION
+$route['dashboard/portafolio'] = "d_portafolio";
+$route['dashboard/portafolio/load'] = "d_portafolio/load";
+$route['dashboard/portafolio/delete'] = "d_portafolio/delete";
+$route['dashboard/portafolio/load/([0-9]+)'] = "d_portafolio/load/$1";
+$route['dashboard/portafolio/validate'] = "d_portafolio/validate";
+
 $route['dashboard/testimonios'] = "d_testimonios";
 $route['dashboard/testimonios/load'] = "d_testimonios/load";
 $route['dashboard/testimonios/delete'] = "d_testimonios/delete";
@@ -117,7 +89,6 @@ $route['dashboard/categorias/load'] = "d_categories/load";
 $route['dashboard/categorias/delete'] = "d_categories/delete";
 $route['dashboard/categorias/load/([0-9]+)'] = "d_categories/load/$1";
 $route['dashboard/categorias/validate'] = "d_categories/validate";
-
 
 $route['dashboard/marcas'] = "d_marcas";
 $route['dashboard/marcas/load'] = "d_marcas/load";

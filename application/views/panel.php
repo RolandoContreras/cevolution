@@ -36,8 +36,8 @@
              <div class="col-md-6 col-xl-4">
                 <div class="card user-card">
                   <div class="card-block">
-                    <h5 class="f-w-400 m-b-15">Proyectos</h5>
-                    <h4 class="f-w-300 mb-3"></h4><span class="text-muted">Total</span></div>
+                    <h5 class="f-w-400 m-b-15">Protafolio</h5>
+                    <h4 class="f-w-300 mb-3"><a href="<?php echo site_url().'dashboard/portafolio';?>"><?php echo $obj_total->total_portafolio;?></a></h4><span class="text-muted">Total</span></div>
                 </div>
               </div>
               <div class="col-md-6 col-xl-4">
@@ -51,7 +51,7 @@
                 <div class="card user-card">
                   <div class="card-block">
                     <h5 class="f-w-400 m-b-15">Categorías</h5>
-                    <h4 class="f-w-300 mb-3"><?php echo $obj_total->total_categorias;?></h4><span class="text-muted">Total</span></div>
+                    <h4 class="f-w-300 mb-3"><?php echo $obj_total->total_category;?></h4><span class="text-muted">Total</span></div>
                 </div>
               </div>
 <!--              <div class="col-md-6 col-xl-4">

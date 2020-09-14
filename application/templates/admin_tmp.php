@@ -107,7 +107,7 @@
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/disenos";?>"><i class="icon-large icon-th"></i>Diseños</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/marcas";?>"><i class="icon-large icon-th"></i>Marcas</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/testimonios";?>"><i class="icon-large icon-th"></i>Testimonios</a></li>
-                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/software";?>"><i class="icon-large icon-th"></i>Software</a></li>
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/portafolio";?>"><i class="icon-large icon-th"></i>Portafolio</a></li>
                 <?php if($_SESSION['usercms']['privilage'] > 1){ ?>
                 <li class="pcoded-hasmenu" ><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Usuarios</a></li>
                 <?php } ?>

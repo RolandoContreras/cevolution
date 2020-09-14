@@ -17,13 +17,14 @@ class Panel extends CI_Controller{
             
         //GET TOTAL ROWS
         $params = array("select" =>"count(comment_id) as total_comments,
+                                    (select count(*) from portafolio) as total_portafolio,
                                     (select count(*) from diseños) as total_diseños,
                                     (select count(*) from marcas) as total_marcas,
-                                    (select count(*) from category) as total_categorias,
+                                    (select count(*) from category) as total_category,
                                     (select count(*) from testimony) as total_testimony"
                                     );
         $obj_total = $this->obj_comments->get_search_row($params);
-        
+        //send data
         $this->tmp_mastercms->set('obj_pending',$obj_pending);
         $this->tmp_mastercms->set('obj_total',$obj_total);
         $this->tmp_mastercms->render('panel');

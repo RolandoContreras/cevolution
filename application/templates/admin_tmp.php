@@ -102,6 +102,7 @@
                 <span class="pcoded-mtext">Mantenimientos</span>
             </a>
             <ul class="pcoded-submenu">
+                <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/categorias";?>"><i class="icon-large icon-th"></i>Categorías</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comentarios</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/disenos";?>"><i class="icon-large icon-th"></i>Diseños</a></li>
                 <li class="pcoded-hasmenu"><a href="<?php echo site_url()."dashboard/marcas";?>"><i class="icon-large icon-th"></i>Marcas</a></li>

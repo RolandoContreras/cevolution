@@ -112,6 +112,13 @@ $route['dashboard/testimonios/delete'] = "d_testimonios/delete";
 $route['dashboard/testimonios/load/([0-9]+)'] = "d_testimonios/load/$1";
 $route['dashboard/testimonios/validate'] = "d_testimonios/validate";
 
+$route['dashboard/categorias'] = "d_categories";
+$route['dashboard/categorias/load'] = "d_categories/load";
+$route['dashboard/categorias/delete'] = "d_categories/delete";
+$route['dashboard/categorias/load/([0-9]+)'] = "d_categories/load/$1";
+$route['dashboard/categorias/validate'] = "d_categories/validate";
+
+
 $route['dashboard/marcas'] = "d_marcas";
 $route['dashboard/marcas/load'] = "d_marcas/load";
 $route['dashboard/marcas/load/([0-9]+)'] = "d_marcas/load/$1";
@@ -124,9 +131,6 @@ $route['dashboard/disenos/load/([0-9]+)'] = "d_diseños/load/$1";
 $route['dashboard/disenos/delete'] = "d_diseños/delete";
 $route['dashboard/disenos/validate'] = "d_diseños/validate";
 
-$route['dashboard/pagos_diarios'] = "d_pay_dialy";
-$route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";
-
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
 $route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";
@@ -136,16 +140,6 @@ $route['dashboard/usuarios'] = "d_users";
 $route['dashboard/usuarios/load'] = "d_users/load";
 $route['dashboard/usuarios/load/([0-9]+)'] = "d_users/load/$1";
 $route['dashboard/usuarios/validate'] = "d_users/validate";
-
-$route['dashboard/activaciones'] = "d_activate";
-$route['dashboard/activaciones/active_customer'] = "d_activate/active_customer";
-$route['dashboard/activaciones/active_financy'] = "d_activate/active_financy";
-$route['dashboard/activaciones/active'] = "d_activate/active";
-
-$route['dashboard/cobros'] = "d_pays";
-$route['dashboard/cobros_details/([0-9]+)'] = "d_pays/details/$1";
-$route['dashboard/cobros/pagado'] = "d_pays/pagado";
-$route['dashboard/cobros/devolver'] = "d_pays/devolver";
 
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";

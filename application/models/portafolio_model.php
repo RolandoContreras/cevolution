@@ -26,12 +26,12 @@ class Portafolio_Model extends CI_Model{
         $this->name='';
         $this->slug='';
         $this->description='';
-        $this->img='';
-        $this->img_2='';
-        $this->img_3='';
-        $this->img_4='';
-        $this->img_5='';
-        $this->img_6='';
+        $this->img1='';
+        $this->img2='';
+        $this->img3='';
+        $this->img4='';
+        $this->img5='';
+        $this->img6='';
         $this->date='';
 	$this->status='';
         $this->updated_at='';
@@ -52,12 +52,12 @@ class Portafolio_Model extends CI_Model{
   
     public function update($pk, $data){
         $this->db->where($this->table_id, $pk);
-        $this->db->update($this->table, $data);
+        return $this->db->update($this->table, $data);
     }
 
     public function delete($pk){
         $this->db->where($this->table_id, $pk);
-        $this->db->delete($this->table);
+        return $this->db->delete($this->table);
     }
   
     public function get_search_row($data){

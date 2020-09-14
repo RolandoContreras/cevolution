@@ -26,7 +26,7 @@ class diseño_model_atributos{
     var $updated_by='';
 }
 
-class Diseño_Model extends CI_Model{ 
+class Diseno_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  

@@ -62,7 +62,7 @@
                                 <td>
                                     <span class="label label-warning"><?php echo $value->category;?></span>
                                 </td>
-                                <td><img width="50" src="<?php echo site_url().'static/cms/img/portafolio/'.$value->portafolio_id."/".$value->img;?>"></td>
+                                <td><img width="50" src="<?php echo site_url().'static/cms/img/portafolio/'.$value->portafolio_id."/".$value->img1;?>"></td>
                                 <td>
                                     <?php if ($value->status == 0) {
                                         $valor = "No Activo";

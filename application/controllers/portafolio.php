@@ -6,7 +6,7 @@ class Portafolio extends CI_Controller {
         parent::__construct();
         $this->load->model("testimony_model","obj_testimony");
         $this->load->model("marcas_model","obj_marcas");
-        $this->load->model("diseño_model","obj_diseños");
+        $this->load->model("diseno_model","obj_diseños");
     }   
         
 	/**

@@ -7,6 +7,7 @@ class Portafolio extends CI_Controller {
         $this->load->model("testimony_model","obj_testimony");
         $this->load->model("marcas_model","obj_marcas");
         $this->load->model("diseno_model","obj_diseños");
+        $this->load->model("portafolio_model", "obj_portafolio");
     }   
         
 	/**
@@ -66,24 +67,31 @@ class Portafolio extends CI_Controller {
            $this->load->view('home' ,$data);
 	}
         
-        public function detail()
+        public function detail($category_slug=null)
 	{
+            $url = uri_string();
+            $nav = explode("/", $url);
+            $slug = $nav[2];
             //OBTENER TODOS LOS TESTIMONIOS
            $params = array(
-                        "select" =>"testimony.testimony_id,
-                                    testimony.name,
-                                    testimony.description,
-                                    testimony.date,
-                                    testimony.img,
-                                    testimony.web,
-                                    testimony.active",
-                        "where" =>"testimony.active = 1",
-                        "order" =>"testimony_id DESC"
-                        );
-           //OBTENER TODOS LOS TESTIMONIOS
-           $data['obj_testimony'] = $this->obj_testimony->search($params);
-           //OBTENER LAS MARCAS
+            "select" => "portafolio.portafolio_id,
+                                                portafolio.name,
+                                                portafolio.description,
+                                                portafolio.img1,
+                                                portafolio.img2,
+                                                portafolio.img3,
+                                                portafolio.img4,
+                                                portafolio.img5,
+                                                portafolio.img6,
+                                                portafolio.date,
+                                                portafolio.status,
+                                                category.name as category_name,
+                                                category.slug as category_slug",
+            "join" => array('category, portafolio.category_id = category.category_id'),
+            "where" => "category.slug = '$category_slug' and portafolio.slug = '$slug'",
+        );
+        $data['obj_portafolio'] = $this->obj_portafolio->get_search_row($params);
            //ENVIAR DATA A VISTA
-           $this->load->view('portafolio' ,$data);
+           $this->load->view('portafolio_detail' ,$data);
 	}
 }

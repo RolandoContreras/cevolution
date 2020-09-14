@@ -48,7 +48,7 @@ $route['software/([0-9a-z_-]+)'] = 'software/detail';
 $route['demo'] = 'demo';
 $route['demo/home'] = 'demo/home';
 
-$route['portafolio/([0-9a-z_-]+)'] = 'portafolio/detail';
+$route['portafolio/([0-9a-z_-]+)/([0-9a-z_-]+)'] = 'portafolio/detail/$1';
 
 $route['contacto'] = 'contact';
 $route['contacto'] = 'contact';

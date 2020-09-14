@@ -107,7 +107,7 @@
                                                         </div>
                                                     <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 1 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 1 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file" id="image_file" onchange="upload_img();">
                                                             <label id="label_img" class="custom-file-label invalid">Elegir archivos...</label>
@@ -122,7 +122,7 @@
                                                         </div>
                                                     <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 2 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 2 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file2" id="image_file2" onchange="upload_img2();">
                                                             <label id="label_img2" class="custom-file-label invalid">Elegir archivos...</label>
@@ -131,13 +131,13 @@
                                                     </div>
 <?php if (isset($obj_portafolio->img3)) { ?>
                                                         <div class="form-group">
-                                                            <label>Imagen 2</label><br/>
+                                                            <label>Imagen 3</label><br/>
                                                             <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img3"; ?>' width="100" />
                                                             <input class="form-control" type="hidden" name="img_3" id="img_3" value="<?php echo isset($obj_portafolio) ? $obj_portafolio->img3 : ""; ?>">
                                                         </div>
                                                     <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 3 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 3 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file3" id="image_file3"  onchange="upload_img3();">
                                                             <label id="label_img3" class="custom-file-label invalid">Elegir archivos...</label>
@@ -152,7 +152,7 @@
                                                         </div>
                                                     <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 4 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 4 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file4" id="image_file4"  onchange="upload_img4();">
                                                             <label id="label_img4" class="custom-file-label invalid">Elegir archivos...</label>
@@ -167,7 +167,7 @@
                                                         </div>
 <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 5 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 5 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file5" id="image_file5"  onchange="upload_img5();">
                                                             <label id="label_img5" class="custom-file-label invalid">Elegir archivos...</label>
@@ -182,7 +182,7 @@
                                                         </div>
 <?php } ?>
                                                     <div class="form-group">
-                                                        <label>Imagen 6 (Tamaño 1200 x 800)</label>
+                                                        <label>Imagen 6 (Tamaño 1000 x 600)</label>
                                                         <div class="custom-file">
                                                             <input type="file" class="custom-file-input" value="Upload Imagen de Envio" name="image_file6" id="image_file6"  onchange="upload_img6();">
                                                             <label id="label_img6" class="custom-file-label invalid">Elegir archivos...</label>

@@ -213,7 +213,7 @@ class D_portafolio extends CI_Controller {
                 die("No se ha seleccionado ningun archivos");
             }
             if (move_uploaded_file($templocation6, "./static/cms/img/portafolio/$portafolio_id/$name6")) {
-                $img5 = $name5;
+                $img6 = $name6;
             }
          }else{
              $img6 = $img_6;

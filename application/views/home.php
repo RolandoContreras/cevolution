@@ -392,21 +392,22 @@
                             </a>
                         </div>
                   <?php } ?>
-<!--                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
-                    <a class="img-thumbnail-variant-3" href="<?php echo site_url().'software/cererito-digital'; ?>">
-                        <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315"/>
-                        <span class="label-custom label-white">Enlace</span>
-                          <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
+                  <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1" style="position: absolute; left: 0px; top: 0px;">
+                      <a class="img-thumbnail-variant-3" href="<?php echo site_url()."portafolio/single-portfolio"?>">
+                          <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-1-418x315.jpg" alt="" width="418" height="315">
+                          <span class="label-custom label-white">Link</span>
+                          <div class="caption">
+                              <span class="icon hover-top-element linear-icon-folder-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
                               <li>9 photos</li>
-                              <li>Objects</li>
+                              <li>People</li>
                             </ul>
                             <p class="heading-5 hover-top-element">Portfolio Album</p>
                             <div class="divider"></div>
                             <p class="small hover-bottom-element">Creating Portfolio.</p><span class="icon arrow-right linear-icon-arrow-right"></span>
                           </div>
-                    </a>
-                </div>-->
+                      </a>
+                </div>
 <!--                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1">
                     <a class="img-thumbnail-variant-3" href="single-portfolio.html">
                         <img src="https://livedemo00.template-help.com/wt_69536/images/portfolio-3-418x315.jpg" alt="" width="418" height="315"/>
@@ -426,79 +427,6 @@
           </div>
         </div>
       </section>
-      <!-- Meet Our Team-->
-<!--      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Team">
-        <div class="bg-decor d-flex align-items-start" data-parallax-scroll="{&quot;y&quot;: -50,  &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-7.png" alt=""/>
-        </div>
-        <div class="container">
-          <h4 class="heading-decorated">Meet Our Team</h4>
-          <div class="row row-50 offset-top-1">
-            <div class="col-md-6 col-lg-4">
-               Thumb corporate
-              <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/calvin-fitzerald-418x315.jpg" alt="" width="418" height="315"/>
-                  <div class="thumb-corporate__overlay">
-                    <ul class="list-inline-sm thumb-corporate__list">
-                      <li><a class="icon-sm fa-facebook icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-twitter icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-google-plus icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-vimeo icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-youtube icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-pinterest-p icon" href="#"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="team-member-profile.html">Amanda Smith</a></p>
-                  <p class="thumb__subtitle">Director</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               Thumb corporate
-              <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/luis-maxwell-418x415.jpg" alt="" width="418" height="415"/>
-                  <div class="thumb-corporate__overlay">
-                    <ul class="list-inline-sm thumb-corporate__list">
-                      <li><a class="icon-sm fa-facebook icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-twitter icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-google-plus icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-vimeo icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-youtube icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-pinterest-p icon" href="#"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="team-member-profile.html">Brian King</a></p>
-                  <p class="thumb__subtitle">Marketing manager</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               Thumb corporate
-              <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="https://livedemo00.template-help.com/wt_69536/images/josh-wagner-418x315.jpg" alt="" width="418" height="315"/>
-                  <div class="thumb-corporate__overlay">
-                    <ul class="list-inline-sm thumb-corporate__list">
-                      <li><a class="icon-sm fa-facebook icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-twitter icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-google-plus icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-vimeo icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-youtube icon" href="#"></a></li>
-                      <li><a class="icon-sm fa-pinterest-p icon" href="#"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="team-member-profile.html">George Nelson</a></p>
-                  <p class="thumb__subtitle">Designer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <section class="section parallax-container context-dark decor-text" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/bg-image-6.jpg" data-content="Testimonials">
         <div class="parallax-content"> 
           <div class="container section-lg text-center">
@@ -526,7 +454,6 @@
           </div>
         </div>
       </section>
-
       <section class="section-md text-center bg-default">
         <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-4.png" alt=""/>
         </div>

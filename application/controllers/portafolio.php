@@ -53,12 +53,13 @@ class Portafolio extends CI_Controller {
                                                 category.slug as category_slug",
             "join" => array('category, portafolio.category_id = category.category_id'),
             "where" => "portafolio.status = 1",
+             "order" => "portafolio.portafolio_id DESC"
         );
         /// PAGINADO
         $config = array();
         $config["base_url"] = site_url("portafolio");
         $config["total_rows"] = $this->obj_portafolio->total_records($params);
-        $config["per_page"] = 12;
+        $config["per_page"] = 1;
         $config["num_links"] = 1;
         $config["uri_segment"] = 2;
 
@@ -79,6 +80,64 @@ class Portafolio extends CI_Controller {
         $data['obj_pagination'] = $this->pagination->create_links();
         /// DATA
         $data['obj_portafolio'] = $this->obj_portafolio->search_data($params, $config["per_page"], $this->uri->segment(2));
+        //ENVIAR DATA A VISTA
+        $this->load->view('portafolio', $data);
+    }
+    
+    public function category($category_slug=NULL) {
+        //get category
+        $data['obj_category'] = $this->get_category();
+        //get diseños
+        $params = array(
+            "select" => "diseños.diseño_id,
+                                    diseños.name,
+                                    diseños.img,
+                                    diseños.img_2",
+            "where" => "diseños.active = 1",
+            "order" => "diseño_id DESC"
+        );
+        //OBTENER TODOS LOS TESTIMONIOS
+        $data['obj_diseños'] = $this->obj_diseños->search($params);
+        //OBTENER TODOS EL PORTAFOLIO
+         $params = array(
+            "select" => "portafolio.portafolio_id,
+                                                portafolio.name,
+                                                portafolio.slug,
+                                                portafolio.description,
+                                                portafolio.img1,
+                                                portafolio.date,
+                                                portafolio.status,
+                                                category.name as category_name,
+                                                category.slug as category_slug",
+            "join" => array('category, portafolio.category_id = category.category_id'),
+            "where" => "category.slug = '$category_slug' and portafolio.status = 1",
+             "order" => "portafolio.portafolio_id DESC"
+        );
+        /// PAGINADO
+        $config = array();
+        $config["base_url"] = site_url("portafolio/$category_slug");
+        $config["total_rows"] = $this->obj_portafolio->total_records($params);
+        $config["per_page"] = 1;
+        $config["num_links"] = 1;
+        $config["uri_segment"] = 3;
+
+        $config['first_tag_open'] = '<li>';
+        $config['first_tag_close'] = '</li>';
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li class="active"><span aria-current="page" class="page-numbers current">';
+        $config['cur_tag_close'] = '</span></li>';
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li>';
+        $config['last_tag_close'] = '</li>';
+
+        $this->pagination->initialize($config);
+        $data['obj_pagination'] = $this->pagination->create_links();
+        /// DATA
+        $data['obj_portafolio'] = $this->obj_portafolio->search_data($params, $config["per_page"], $this->uri->segment(3));
         //ENVIAR DATA A VISTA
         $this->load->view('portafolio', $data);
     }

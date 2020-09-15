@@ -72,13 +72,41 @@
                     </div>
                     <div class="rd-navbar-search_collapsable">
                         <ul class="rd-navbar-nav">
-                            <li class="active">
+                            <?php 
+                            //set var
+                            $servicios_style = null;
+                            $portafolio_style = null;
+                            $contacto_style = null;
+                            $inicio_style = null;
+                            //get data url
+                            $url = explode("/", uri_string());
+                            if (isset($url[0])) {
+                                $nav = $url[0];
+                            } else {
+                                $nav = "";
+                            }
+                            switch ($nav) {
+                                case "servicios":
+                                    $servicios_style = "active";
+                                    break;
+                                case "portafolio":
+                                    $portafolio_style = "active";
+                                    break;
+                                case "contacto":
+                                    $contacto_style = "active";
+                                    break;
+                                default:
+                                    $inicio_style = "active";
+                                    break;
+                            }
+                            ?>
+                            <li class="<?php echo $inicio_style;?>">
                                 <a href="<?php echo site_url(); ?>">Inicio</a>
                             </li>
-                            <li>
+                            <li class="<?php echo $servicios_style;?>">
                                 <a href="#">Servicios</a>
                             </li>
-                            <li>
+                            <li class="<?php echo $portafolio_style;?>">
                                 <a href="<?php echo site_url()."portafolio";?>">Portafolio</a>
                                 <ul class="rd-navbar-dropdown">
                                     <?php 
@@ -89,7 +117,7 @@
                                     <?php } ?>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="<?php echo $contacto_style;?>">
                                 <a href="<?php echo site_url() . 'contacto'; ?>">Contacto</a>
                             </li>
                             <li>

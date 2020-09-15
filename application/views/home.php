@@ -354,7 +354,7 @@
                 <div class="container">
                     <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
                         <div class="col-xl-8 text-xl-left">
-                            <h4><span class="text-transform-none">EVOLUCION</span><br><span>Una solución flexible a bajo costo</span></h4>
+                            <h4><span class="text-transform-none">EVOLUCION</span><br><span>Una solución flexible a tu alcance</span></h4>
                             <p>¡Empieza a construir tus sueños, contáctate ahora!</p>
                         </div>
                         <div class="col-xl-2 text-xl-right"><a class="button button-primary" href="<?php echo site_url() . 'contacto'; ?>">Contacto</a></div>

@@ -104,7 +104,7 @@
                                 <a href="<?php echo site_url(); ?>">Inicio</a>
                             </li>
                             <li class="<?php echo $servicios_style;?>">
-                                <a href="#">Servicios</a>
+                                <a href="<?php echo site_url()."servicios";?>">Servicios</a>
                             </li>
                             <li class="<?php echo $portafolio_style;?>">
                                 <a href="<?php echo site_url()."portafolio";?>">Portafolio</a>

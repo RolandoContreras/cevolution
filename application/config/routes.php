@@ -48,6 +48,8 @@ $route['software/([0-9a-z_-]+)'] = 'software/detail';
 $route['demo'] = 'demo';
 $route['demo/home'] = 'demo/home';
 
+$route['servicios'] = 'servicios';
+
 $route['portafolio/([0-9]+)'] = 'portafolio/index/$1';
 $route['portafolio/([a-z_-]+)'] = 'portafolio/category/$1';
 $route['portafolio/([a-z_-]+)/([0-9]+)'] = 'portafolio/category/$1';

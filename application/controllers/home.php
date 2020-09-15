@@ -72,7 +72,9 @@ class Home extends CI_Controller {
                                                 portafolio.status,
                                                 category.name as category_name,
                                                 category.slug as category_slug",
-            "join" => array('category, portafolio.category_id = category.category_id')
+            "join" => array('category, portafolio.category_id = category.category_id'),
+            "limit" => "9",
+            "order" => "portafolio.portafolio_id DESC",
         );
         $data['obj_portafolio'] = $this->obj_portafolio->search($params);
         //ENVIAR DATA A VISTA

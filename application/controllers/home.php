@@ -7,6 +7,7 @@ class Home extends CI_Controller {
         parent::__construct();
         $this->load->model("testimony_model", "obj_testimony");
         $this->load->model("marcas_model", "obj_marcas");
+        $this->load->model("category_model", "obj_category");
         $this->load->model("diseno_model", "obj_diseños");
         $this->load->model("portafolio_model", "obj_portafolio");
     }
@@ -27,6 +28,8 @@ class Home extends CI_Controller {
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
+        //get category
+        $data['obj_category'] = $this->get_category();
         //OBTENER TODOS LOS TESTIMONIOS
         $params = array(
             "select" => "testimony.testimony_id,
@@ -80,5 +83,15 @@ class Home extends CI_Controller {
         //ENVIAR DATA A VISTA
         $this->load->view('home', $data);
     }
-
+    
+    public function get_category() {
+        $params = array(
+            "select" => "slug,
+                        name",
+            "where" => "active = 1"
+        );
+        //OBTENER TODOS LOS TESTIMONIOS
+        $obj_category = $this->obj_category->search($params);
+        return $obj_category;
+    }
 }

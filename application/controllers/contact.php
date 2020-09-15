@@ -1,63 +1,68 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Contact extends CI_Controller {
+
     public function __construct() {
-        parent::__construct();     
-        $this->load->model('comments_model','obj_comments');
+        parent::__construct();
+        $this->load->model('comments_model', 'obj_comments');
+        $this->load->model("category_model", "obj_category");
     }
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$this->load->view('contact');
-	}
-        public function enviar_mensage(){
-            if($this->input->is_ajax_request()){ 
-                
-                $name = $this->input->post('name');  
-                $email = $this->input->post('email');  
-                $subject = $this->input->post('subject');  
-                $message = $this->input->post('message');  
-                
-                    //status_value 0 means (not read)
-                    $data = array(
-                        'name' => $name,
-                        'email' => $email,
-                        'comment' => $message,
-                        'subject' => $subject,
-                        'date_comment' => date("Y-m-d H:i:s"),
-                        'status_value' => 1,
-                    );
-                    $comment_id = $this->obj_comments->insert($data);
-                    if($comment_id != null){
-                        $data['message'] = true; 
-                        //enviar mensaje de confirmación al correo
-                        $this->message($name, $email, $subject, $message);
-                    }else{
-                        $data['message'] = false;       
-                    }
-                echo json_encode($data);  
-                exit();      
+    /**
+     * Index Page for this controller.
+     *
+     * Maps to the following URL
+     * 		http://example.com/index.php/welcome
+     * 	- or -
+     * 		http://example.com/index.php/welcome/index
+     * 	- or -
+     * Since this controller is set as the default controller in
+     * config/routes.php, it's displayed at http://example.com/
+     *
+     * So any other public methods not prefixed with an underscore will
+     * map to /index.php/welcome/<method_name>
+     * @see https://codeigniter.com/user_guide/general/urls.html
+     */
+    public function index() {
+        //get category
+        $data['obj_category'] = $this->get_category();
+        $this->load->view('contact',$data);
+    }
+
+    public function enviar_mensage() {
+        if ($this->input->is_ajax_request()) {
+
+            $name = $this->input->post('name');
+            $email = $this->input->post('email');
+            $subject = $this->input->post('subject');
+            $message = $this->input->post('message');
+
+            //status_value 0 means (not read)
+            $data = array(
+                'name' => $name,
+                'email' => $email,
+                'comment' => $message,
+                'subject' => $subject,
+                'date_comment' => date("Y-m-d H:i:s"),
+                'status_value' => 1,
+            );
+            $comment_id = $this->obj_comments->insert($data);
+            if ($comment_id != null) {
+                $data['message'] = true;
+                //enviar mensaje de confirmación al correo
+                $this->message($name, $email, $subject, $message);
+            } else {
+                $data['message'] = false;
             }
-        } 
-        
-        public function message($name, $email, $subject, $message){    
-                $mensaje = wordwrap("<html>
+            echo json_encode($data);
+            exit();
+        }
+    }
+
+    public function message($name, $email, $subject, $message) {
+        $mensaje = wordwrap("<html>
                      <div bgcolor='#E9E9E9' style='background:#fff;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px'>
                       <table style='background-color:#fff;border-collapse:collapse;margin:0;padding:0' width='100%' height='100%' cellspacing='0' cellpadding='0' border='0'
                         align='center'>
@@ -123,10 +128,22 @@ class Contact extends CI_Controller {
                       </table>
                       </div>
                             .</html>", 70, "\n", true);
-                    $titulo = "Contacto - $subject";
-                    $headers = "MIME-Version: 1.0\r\n"; 
-                    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                    $headers .= "From: EVOLUCION WEB <contacto@evolucionweb.tech>\r\n";
-                    $bool = mail("software.contreras@gmail.com",$titulo,$mensaje,$headers);
+        $titulo = "Contacto - $subject";
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+        $headers .= "From: EVOLUCION WEB <contacto@evolucionweb.tech>\r\n";
+        $bool = mail("software.contreras@gmail.com", $titulo, $mensaje, $headers);
     }
+
+    public function get_category() {
+        $params = array(
+            "select" => "slug,
+                        name",
+            "where" => "active = 1"
+        );
+        //OBTENER TODOS LOS TESTIMONIOS
+        $obj_category = $this->obj_category->search($params);
+        return $obj_category;
+    }
+
 }

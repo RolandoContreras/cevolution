@@ -17,7 +17,7 @@
                                             <span class="icon-primary icon-sm lnr lnr-apartment"></span>
                                         </div>
                                         <div class="unit__body">
-                                            <p><a href="#">Dirección: Calle los Antares #320 Of. 606, Centro Empresarial El Trigal - Surco</a></p>
+                                            <p><a>Dirección: Calle los Antares #320 Of. 606, Centro Empresarial El Trigal - Surco</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -79,17 +79,14 @@
                                 <a href="#">Servicios</a>
                             </li>
                             <li>
-                                <a href="#">Portafolio</a>
+                                <a href="<?php echo site_url()."portafolio";?>">Portafolio</a>
                                 <ul class="rd-navbar-dropdown">
-                                    <li>
-                                        <a href="<?php echo site_url().'sistema-multinivel';?>">Sistema Multinivel</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo site_url().'plataforma-curso-online';?>">Plataforma de Curso Online</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo site_url().'sistemas-prospeccion';?>">Sistemas de Prospección</a>
-                                    </li>
+                                    <?php 
+                                    foreach ($obj_category as $value) { ?>
+                                        <li>
+                                            <a href="<?php echo site_url()."portafolio/$value->slug";?>"><?php echo $value->name;?></a>
+                                        </li>
+                                    <?php } ?>
                                 </ul>
                             </li>
                             <li>

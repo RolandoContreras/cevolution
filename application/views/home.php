@@ -99,7 +99,7 @@
                     <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-3.png'; ?>" alt="fondo3"/>
                 </div>
                 <div class="container">
-                    <h4 class="heading-decorated">Nuestro Servicios</h4>
+                    <h4 class="heading-decorated">Nuestros Servicios</h4>
                     <!-- Circle carousel -->
                     <div class="carousel-wrapper">
                         <div class="circle-carousel" data-speed="1000" data-autoplay="5000">

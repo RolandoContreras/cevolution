@@ -92,9 +92,6 @@
                 <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 100,  &quot;smoothness&quot;: 30}">
                     <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-1.png'; ?>" alt="fondo1"/>
                 </div>
-                <div class="bg-decor d-flex align-items-end" data-parallax-scroll="{&quot;x&quot;: -150, &quot;from-scroll&quot;: 420, &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-2.png'; ?>" alt="fondo2"/>
-                </div>
                 <div class="bg-decor" data-parallax-scroll="{&quot;x&quot;: 80, &quot;y&quot;: 80,  &quot;smoothness&quot;: 30}">
                     <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-3.png'; ?>" alt="fondo3"/>
                 </div>

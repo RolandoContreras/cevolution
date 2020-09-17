@@ -41,6 +41,8 @@
 $route['default_controller'] = "home";
 $route['404_override'] = 'errors/error_404';
 
+$route['tu-tienda-online'] = 'campana';
+
 $route['home'] = 'home';
 $route['login'] = 'login';
 $route['software/([0-9a-z_-]+)'] = 'software/detail';

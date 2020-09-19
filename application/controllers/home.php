@@ -84,6 +84,111 @@ class Home extends CI_Controller {
         $this->load->view('home', $data);
     }
     
+    public function terminos() {
+        $this->load->view("terminos");
+    }
+    
+    public function sitemap() {
+        //obtener categorias
+        $params_category = array(
+            "select" => "category_id,
+                                    slug,
+                                    date,
+                                    name",
+            "where" => "active = 1",
+        );
+        $obj_category = $this->obj_category->search($params_category);
+        //obtener portafolio
+         $params = array(
+            "select" => "portafolio.portafolio_id,
+                                                portafolio.name,
+                                                portafolio.slug,
+                                                portafolio.description,
+                                                portafolio.date,
+                                                portafolio.status,
+                                                category.slug as category_slug",
+            "join" => array('category, portafolio.category_id = category.category_id'),
+            "where" => "portafolio.status = 1",
+        );
+        $obj_portafolio = $this->obj_portafolio->search($params);
+        //crear código
+        $codigo = '<?xml version="1.0" encoding="UTF-8"?>
+      <urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
+        foreach ($obj_category as $value) {
+                $explode_data = explode(" ", $value->date);
+                $date = "$explode_data[0]" . 'T' . $explode_data[1] . "+00:00";
+                $codigo .='<url>
+                <loc>' . site_url() . "portafolio/" . $value->slug;
+                $codigo .='</loc>
+                <lastmod>' . $date . '</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url>';
+        }
+        foreach ($obj_portafolio as $value) {
+            $explode_data = explode(" ", $value->date);
+            $date = "$explode_data[0]" . 'T' . $explode_data[1] . "+00:00";
+            $codigo .='<url>
+                <loc>' . site_url() . "portafolio/" . $value->category_slug . "/" . $value->slug;
+            $codigo .='</loc>
+                <lastmod>' . $date . '</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url>';
+        }
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>1.00</priority>';
+        $codigo .='</url>';
+        $codigo .='<url>';
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . 'servicios' . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>0.80</priority>';
+        $codigo .='</url>';
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . 'contacto' . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>0.80</priority>';
+        $codigo .='</url>';
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . 'portafolio' . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>0.80</priority>';
+        $codigo .='</url>';
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . 'demo' . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>0.80</priority>';
+        $codigo .='</url>';
+        $codigo .='<url>';
+        $codigo .='<loc>' . site_url() . 'terminos-y-condiciones' . '</loc>';
+        $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
+        $codigo .='<changefreq>weekly</changefreq>
+                       <priority>0.80</priority>';
+        $codigo .='</url>';
+        $codigo .='</urlset>';
+        $path = "sitemap.xml";
+        $modo = "w+";
+
+        if ($fp = fopen($path, $modo)) {
+            fwrite($fp, $codigo);
+            echo "Se realizo con Exito";
+        } else {
+            echo "Error";
+        }
+    }
+    
     public function get_category() {
         $params = array(
             "select" => "slug,

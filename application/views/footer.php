@@ -94,7 +94,7 @@
             <p class="rights">
                 <span>Evolution</span><span>&nbsp;</span>
                 <span class="copyright-year"></span>. Todos los derechos reservados.
-                <a href="<?php echo site_url().'privacy_policy';?>"><b>Términos y uso de la política de privacidad</b></a></p>
+                <a href="<?php echo site_url().'terminos-y-condiciones';?>"><b>Términos y uso de la política de privacidad</b></a></p>
             <ul class="list-inline-xxs">
                 <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/evolucionweb.tech/" target="_blank"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>

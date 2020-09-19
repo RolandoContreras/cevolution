@@ -47,10 +47,14 @@ $route['home'] = 'home';
 $route['login'] = 'login';
 $route['software/([0-9a-z_-]+)'] = 'software/detail';
 
+$route['home/sitemap'] = 'home/sitemap';
+
 $route['demo'] = 'demo';
 $route['demo/home'] = 'demo/home';
 
 $route['servicios'] = 'servicios';
+
+$route['terminos-y-condiciones'] = 'home/terminos';
 
 $route['portafolio/([0-9]+)'] = 'portafolio/index/$1';
 $route['portafolio/([a-z_-]+)'] = 'portafolio/category/$1';

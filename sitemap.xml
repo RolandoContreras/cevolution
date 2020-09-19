@@ -1,52 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
+      <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://evolucionweb.tech/</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/contacto</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/demo</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/servicios</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/portafolio</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/portafolio/sistema-multinivel</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/portafolio/plataforma-curso-online</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/portafolio/sistemas-prospeccion</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evolucionweb.tech/privacy_policy</loc>
-  <lastmod>2020-06-23T12:53:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-</urlset>
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><url>
+                <loc>http://localhost/cevolution/portafolio/sistemas-multinivel</loc>
+                <lastmod>2020-09-14T16:36:38+00:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url><url>
+                <loc>http://localhost/cevolution/portafolio/plataforma-educativa</loc>
+                <lastmod>2020-09-14T22:37:44+00:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url><url>
+                <loc>http://localhost/cevolution/portafolio/plataforma-educativa/expancion</loc>
+                <lastmod>2020-09-14T22:37:57+00:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url><url>
+                <loc>http://localhost/cevolution/portafolio/plataforma-educativa/ulinex</loc>
+                <lastmod>2020-09-15T16:45:45+00:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+                </url><url><loc>http://localhost/cevolution/</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>1.00</priority></url><url><url><loc>http://localhost/cevolution/servicios</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>0.80</priority></url><url><loc>http://localhost/cevolution/contacto</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>0.80</priority></url><url><loc>http://localhost/cevolution/portafolio</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>0.80</priority></url><url><loc>http://localhost/cevolution/demo</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>0.80</priority></url><url><loc>http://localhost/cevolution/terminos-y-condiciones</loc><lastmod>2020-07-28T19:18:39+00:00</lastmod><changefreq>weekly</changefreq>
+                       <priority>0.80</priority></url></urlset>

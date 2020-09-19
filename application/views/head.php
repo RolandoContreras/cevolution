@@ -41,8 +41,8 @@
         var site = '<?php echo site_url();?>';
     </script>
     <!--//swetaler2-->
-    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+    <link rel="preload" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <script rel="preload" src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)

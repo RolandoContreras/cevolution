@@ -90,10 +90,10 @@
             <!-- Our Services -->
             <section class="services section-xl bg-default text-center">
                 <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 100,  &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-1.png'; ?>" alt="fondo1"/>
+                    <img data-src="<?php echo site_url() . 'static/page_front/images/bg-decor-1.png'; ?>" class="lazyload" alt="fondo1"/>
                 </div>
                 <div class="bg-decor" data-parallax-scroll="{&quot;x&quot;: 80, &quot;y&quot;: 80,  &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-3.png'; ?>" alt="fondo3"/>
+                    <img data-src="<?php echo site_url() . 'static/page_front/images/bg-decor-3.png'; ?>" class="lazyload" alt="fondo3"/>
                 </div>
                 <div class="container">
                     <h4 class="heading-decorated">Nuestros Servicios</h4>
@@ -252,7 +252,7 @@
             <!-- About us-->
             <section class="bg-gray-lighter object-wrap decor-text" data-content="Aerca" id="about">
                 <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-4.png'; ?>" alt="acerca"/>
+                    <img data-src="<?php echo site_url() . 'static/page_front/images/bg-decor-4.png'; ?>" class="lazyload" alt="Acerca">
                 </div>
                 <div class="section-lg">
                     <div class="container">
@@ -289,7 +289,7 @@
             </section>
             <section class="section-md bg-default decor-text" data-content="Features">
                 <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;x&quot;: -50,  &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-5.png'; ?>" alt="Caracteristicas"/>
+                    <img data-src="<?php echo site_url() . 'static/page_front/images/bg-decor-5.png'; ?>" class="lazyload" alt="Caracteristicas">
                 </div>
                 <div class="container">
                     <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center">
@@ -340,7 +340,7 @@
                         </div>
                         <div class="col-md-7 col-lg-4">
                             <figure class="image-sizing-1" data-parallax-scroll="{&quot;y&quot;: -50,  &quot;smoothness&quot;: 30}">
-                                <img src="<?php echo site_url() . 'static/page_front/images/servicios-img.png'; ?>" alt="" width="1481" height="2068"/>
+                                <img data-src="<?php echo site_url() . 'static/page_front/images/servicios-img.png'; ?>" class="lazyload" alt="Servicios" />
                             </figure>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
             <!-- portfolio-->
             <section class="section-md bg-default text-center">
                 <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . 'static/page_front/images/bg-decor-6.png'; ?>" alt="fondo_works"/>
+                    <img data-src="<?php echo site_url() . 'static/page_front/images/bg-decor-6.png'; ?>" class="lazyload" alt="Portafoio">
                 </div>
                 <div class="container">
                     <h4 class="heading-decorated">Portafolio</h4>
@@ -376,7 +376,7 @@
                                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
                                         <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "static/backoffice/img/diseños/$value->img_2"; ?>" data-lightgallery="item">
                                             <figure>
-                                                <img src="<?php echo site_url() . "static/backoffice/img/diseños/$value->img"; ?>" alt="<?php echo $value->name; ?>"/>
+                                                <img data-src="<?php echo site_url() . "static/backoffice/img/diseños/$value->img"; ?>" class="lazyload" alt="<?php echo $value->name; ?>"/>
                                             </figure>
                                             <div class="caption">
                                                 <span class="icon lnr lnr-picture"></span>
@@ -391,7 +391,7 @@
                                 <?php foreach ($obj_portafolio as $value) { ?>
                                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1" style="position: absolute; left: 0px; top: 0px;">
                                         <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "portafolio/$value->category_slug/$value->slug"; ?>">
-                                            <img src="<?php echo site_url() . "static/cms/img/portafolio/$value->portafolio_id/$value->img1"; ?>" alt="<?php echo $value->name; ?>" width="418" height="315">
+                                            <img data-src="<?php echo site_url() . "static/cms/img/portafolio/$value->portafolio_id/$value->img1"; ?>" alt="<?php echo $value->name; ?>" class="lazyload" width="418" height="315">
                                             <span class="label-custom label-white">Enlace</span>
                                             <div class="caption">
                                                 <span class="icon hover-top-element linear-icon-folder-picture"></span>
@@ -530,7 +530,7 @@
                                 <div class="item">
                                     <div class="quote-default">
                                         <div class="quote-default__image">
-                                            <img src="<?php echo site_url() . "static/backoffice/img/testimonios/$value->img"; ?>" alt="<?php echo $value->name ?>"/>
+                                            <img data-src="<?php echo site_url() . "static/backoffice/img/testimonios/$value->img"; ?>" class="lazyload" alt="<?php echo $value->name ?>"/>
                                         </div>
                                         <div class="quote-default__text">
                                             <p class="q"><?php echo $value->description ?></p>
@@ -548,7 +548,7 @@
             </section>
             <section class="section-md text-center bg-default">
                 <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}">
-                    <img src="<?php echo site_url() . "static/page_front/images/bg-decor-4.png"; ?>" alt="Testimonios"/>
+                    <img data-src="<?php echo site_url() . "static/page_front/images/bg-decor-4.png"; ?>" class="lazyload" alt="Testimonios"/>
                 </div>
                 <div class="container">
                     <h4 class="heading-decorated">Nuestros Clientes</h4>
@@ -557,7 +557,7 @@
                             <div class="col-sm-6 col-md-3">
                                 <figure class="box-icon-image">
                                     <a>
-                                        <img src="<?php echo site_url() . "static/backoffice/img/marcas/$value->img"; ?>" alt="<?php echo $value->name; ?>"/>
+                                        <img data-src="<?php echo site_url() . "static/backoffice/img/marcas/$value->img"; ?>" class="lazyload" alt="<?php echo $value->name; ?>"/>
                                     </a>
                                 </figure>
                             </div>
@@ -568,6 +568,7 @@
             <!-- Page Footer -->
             <?php $this->load->view("footer"); ?>
         </div>
+        <script src="<?php echo site_url() . 'static/page_front/js/seo/lazysizes.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/core.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/script.js'; ?>"></script>
     </body>

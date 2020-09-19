@@ -55,7 +55,7 @@
                     <dt>Teléfonos </dt>
                     <dd>
                       <ul class="list-semicolon">
-                          <li><a class="color-white"href="#">(51) 929 498 649</a></li>
+                          <li><a class="color-white" href="#">(51) 929 498 649</a></li>
                           <li><a class="color-white" href="#">(51) 1 409 5566</a></li>
                       </ul>
                     </dd>

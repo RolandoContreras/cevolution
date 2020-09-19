@@ -390,15 +390,15 @@
                                 <?php } ?>
                                 <?php foreach ($obj_portafolio as $value) { ?>
                                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1" style="position: absolute; left: 0px; top: 0px;">
-                                        <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "portafolio/$value->category_slug/$value->slug";?>">
-                                            <img src="<?php echo site_url()."static/cms/img/portafolio/$value->portafolio_id/$value->img1";?>" alt="<?php echo $value->name;?>" width="418" height="315">
+                                        <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "portafolio/$value->category_slug/$value->slug"; ?>">
+                                            <img src="<?php echo site_url() . "static/cms/img/portafolio/$value->portafolio_id/$value->img1"; ?>" alt="<?php echo $value->name; ?>" width="418" height="315">
                                             <span class="label-custom label-white">Enlace</span>
                                             <div class="caption">
                                                 <span class="icon hover-top-element linear-icon-folder-picture"></span>
                                                 <ul class="list-inline-tag hover-top-element">
                                                     <li>Portafolio</li>
                                                 </ul>
-                                                <p class="heading-5 hover-top-element"><?php echo $value->name;?></p>
+                                                <p class="heading-5 hover-top-element"><?php echo $value->name; ?></p>
                                                 <div class="divider"></div>
                                                 <span class="icon arrow-right linear-icon-arrow-right"></span>
                                             </div>
@@ -410,13 +410,123 @@
                     </div>
                 </div>
             </section>
-            <section class="section parallax-container context-dark decor-text" data-parallax-img="https://livedemo00.template-help.com/wt_69536/images/bg-image-6.jpg" data-content="Testimonials">
+            <!--servicios-->
+            <section class="section parallax-container context-dark decor-text" data-parallax-img="<?php echo site_url() . "static/page_front/images/bg-image-7.jpg"; ?>" data-content="Servicios">
+                <div class="parallax-content"> 
+                    <div class="container p-b-30">
+                    <div class="row row-50">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Landing Page + Campaña Publicitaria</h5>
+                                        <div class="price"><span>$200</span><span>/único pago</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Creación de la página web del negocio</span></li>
+                                            <li>+ Dominio </li>
+                                            <li>+ Hosting y almacenamiento</li>
+                                            <li>+ SSL (certificado de seguridad / por vida)</li>
+                                            <li>+ Asesor para campañas publicitarias</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer">
+                                        <a class="button button-primary" href="#">Comprar Ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table pricing-table-label">
+                                    <div class="pricing-label"><span>¡Solo por campaña!</span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Plataforma de Educación Online</h5>
+                                        <div class="price"><span>$340</span><span>/semestrales</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Gestión Académica</span></li>
+                                            <li>+ Gestión Administrativa </li>
+                                            <li>+ Educación Virtual</li>
+                                            <li>+ Gestión Comercial</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Comprar Ahora!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Sistemas Multinivel</h5>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Backoffice (Oficina virtual)</span></li>
+                                            <li>+ Plan Binario </li>
+                                            <li>+ Unilevel</li>
+                                            <li>+ Matriz</li>
+                                            <li>+ Línea de Carrera</li>
+                                            <li>+ <li>+ Línea de Carrera y más</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Contactar Asesor</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Contratos Inteligentes</h5>
+                                        <div class="price"><span>Muy Pronto</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Blockchain de Tron </span></li>
+                                            <li>+ Blockchain de Ethereum</li>
+                                            <li>+ Gestión administrativa</li>
+                                            <li>+ Y más</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Contactar Asesor</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!--testimonios-->
+            <section class="section parallax-container context-dark decor-text" data-parallax-img="<?php echo site_url() . "static/page_front/images/bg-image-6.jpg"; ?>" data-content="Testimonios">
                 <div class="parallax-content"> 
                     <div class="container section-lg text-center">
                         <h4 class="heading-decorated">QUE DICEN LOS CLIENTES</h4>
                         <!-- Owl Carousel-->
                         <div class="owl-carousel" data-items="1" data-stage-padding="15" data-loop="true" data-margin="30" data-dots="true" data-nav="false" data-autoplay="true">
-<?php foreach ($obj_testimony as $value) { ?>
+                            <?php foreach ($obj_testimony as $value) { ?>
                                 <div class="item">
                                     <div class="quote-default">
                                         <div class="quote-default__image">
@@ -430,19 +540,20 @@
                                     </div>
                                 </div>
 
-<?php } ?>
+                            <?php } ?>
 
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section-md text-center bg-default">
-                <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="https://livedemo00.template-help.com/wt_69536/images/bg-decor-4.png" alt=""/>
+                <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}">
+                    <img src="<?php echo site_url() . "static/page_front/images/bg-decor-4.png"; ?>" alt="Testimonios"/>
                 </div>
                 <div class="container">
                     <h4 class="heading-decorated">Nuestros Clientes</h4>
                     <div class="row row-30">
-<?php foreach ($obj_marcas as $value) { ?>
+                        <?php foreach ($obj_marcas as $value) { ?>
                             <div class="col-sm-6 col-md-3">
                                 <figure class="box-icon-image">
                                     <a>
@@ -450,12 +561,12 @@
                                     </a>
                                 </figure>
                             </div>
-<?php } ?> 
+                        <?php } ?> 
                     </div>
                 </div>
             </section>
             <!-- Page Footer -->
-<?php $this->load->view("footer"); ?>
+            <?php $this->load->view("footer"); ?>
         </div>
         <script src="<?php echo site_url() . 'static/page_front/js/core.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/script.js'; ?>"></script>

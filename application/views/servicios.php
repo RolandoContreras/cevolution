@@ -213,6 +213,115 @@
                     </div>
                 </div>
             </section>
+            <!--servicios-->
+            <section class="section parallax-container context-dark decor-text" data-parallax-img="<?php echo site_url() . "static/page_front/images/bg-image-7.jpg"; ?>" data-content="Servicios">
+                <div class="parallax-content"> 
+                    <div class="container p-b-30">
+                    <div class="row row-50">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Landing Page + Campaña Publicitaria</h5>
+                                        <div class="price"><span>$200</span><span>/único pago</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Creación de la página web del negocio</span></li>
+                                            <li>+ Dominio </li>
+                                            <li>+ Hosting y almacenamiento</li>
+                                            <li>+ SSL (certificado de seguridad / por vida)</li>
+                                            <li>+ Asesor para campañas publicitarias</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer">
+                                        <a class="button button-primary" href="#">Comprar Ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table pricing-table-label">
+                                    <div class="pricing-label"><span>¡Solo por campaña!</span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Plataforma de Educación Online</h5>
+                                        <div class="price"><span>$340</span><span>/semestrales</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Gestión Académica</span></li>
+                                            <li>+ Gestión Administrativa </li>
+                                            <li>+ Educación Virtual</li>
+                                            <li>+ Gestión Comercial</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Comprar Ahora!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Sistemas Multinivel</h5>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Backoffice (Oficina virtual)</span></li>
+                                            <li>+ Plan Binario </li>
+                                            <li>+ Unilevel</li>
+                                            <li>+ Matriz</li>
+                                            <li>+ Línea de Carrera</li>
+                                            <li>+ <li>+ Línea de Carrera y más</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Contactar Asesor</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="pricing-table-wrap">
+                                <div class="pricing-table">
+                                    <div class="pricing-label"><span></span>
+                                        <svg width="86px" height="86px" viewBox="0 0 86 86">
+                                        <path d="M73.4,73.4L67.3,73l-0.8,6.2l-6-1.8l-2.1,5.9l-5.5-3l-3.2,5.3l-4.7-4L40.7,86L37,81.1l-5.1,3.5L29.2,79            l-5.7,2.4l-1.4-6l-6.1,1.1l-0.2-6.2l-6.2-0.2l1.1-6.1l-6-1.4L7,56.8l-5.6-2.7L4.9,49L0,45.3L4.5,41l-4-4.7L5.8,33l-3-5.5l5.9-2.1            l-1.8-6l6.2-0.8l-0.5-6.2l6.2,0.5l0.8-6.2l6,1.8l2.1-5.9l5.5,3l3.2-5.3l4.7,4L45.3,0L49,4.9l5.1-3.5L56.8,7l5.7-2.4l1.4,6l6.1-1.1            l0.2,6.2l6.2,0.2L75.3,22l6,1.4L79,29.2l5.6,2.7L81.1,37l4.9,3.8L81.5,45l4,4.7L80.2,53l3,5.5l-5.9,2.1l1.8,6L73,67.3L73.4,73.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="pricing-header">
+                                        <h5>Contratos Inteligentes</h5>
+                                        <div class="price"><span>Muy Pronto</span></div>
+                                    </div>
+                                    <div class="pricing-body">
+                                        <ul class="list">
+                                            <li><span>+ Blockchain de Tron </span></li>
+                                            <li>+ Blockchain de Ethereum</li>
+                                            <li>+ Gestión administrativa</li>
+                                            <li>+ Y más</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-footer"><a class="button button-primary" href="#">Contactar Asesor</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
             <!--faq-->
             <section class="section-md bg-default"> 
                 <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}" style="transform:translate3d(-100px, -30px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(-100px, -30px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
@@ -288,7 +397,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- Bootstrap card-->
+                                <!-- Bootstrap card-->
                                 <div class="card card-custom">
                                     <div class="card-custom-heading" id="accordionHeading5" role="tab">
                                         <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse5" aria-controls="accordionCollapse5">¿Cuáles son nuestras especialidades?</a>
@@ -303,7 +412,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- Bootstrap card-->
+                                <!-- Bootstrap card-->
                                 <div class="card card-custom">
                                     <div class="card-custom-heading" id="accordionHeading6" role="tab">
                                         <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse6" aria-controls="accordionCollapse5">¿Si ya tengo creado una página web, puedo igual contratar con Evolución Web?</a>

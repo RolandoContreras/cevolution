@@ -147,7 +147,6 @@ class Home extends CI_Controller {
                        <priority>1.00</priority>';
         $codigo .='</url>';
         $codigo .='<url>';
-        $codigo .='<url>';
         $codigo .='<loc>' . site_url() . 'servicios' . '</loc>';
         $codigo .='<lastmod>2020-07-28T19:18:39+00:00</lastmod>';
         $codigo .='<changefreq>weekly</changefreq>

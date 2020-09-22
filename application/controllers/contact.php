@@ -28,37 +28,46 @@ class Contact extends CI_Controller {
     public function index() {
         //get category
         $data['obj_category'] = $this->get_category();
-        $this->load->view('contact',$data);
+        $this->load->view('contact', $data);
     }
 
     public function enviar_mensage() {
-        if ($this->input->is_ajax_request()) {
+//        if ($this->input->is_ajax_request()) {
+            if ($_POST['google-response-token']) {
+                $googleToken = $_POST['google-response-token'];
+                $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcXUs8ZAAAAAOclJoX-F4c9CS_9krhHGlWpJPvN&response={$googleToken}");
+                $response = json_decode($response);
+                $response = (array) $response;
+                if ($response['success'] && ($response['score'] && $response['score'] > 0.5)) {
+                    $name = $this->input->post('name');
+                    $email = $this->input->post('email');
+                    $subject = $this->input->post('subject');
+                    $message = $this->input->post('message');
 
-            $name = $this->input->post('name');
-            $email = $this->input->post('email');
-            $subject = $this->input->post('subject');
-            $message = $this->input->post('message');
-
-            //status_value 0 means (not read)
-            $data = array(
-                'name' => $name,
-                'email' => $email,
-                'comment' => $message,
-                'subject' => $subject,
-                'date_comment' => date("Y-m-d H:i:s"),
-                'status_value' => 1,
-            );
-            $comment_id = $this->obj_comments->insert($data);
-            if ($comment_id != null) {
-                $data['message'] = true;
-                //enviar mensaje de confirmación al correo
-                $this->message($name, $email, $subject, $message);
-            } else {
-                $data['message'] = false;
+                    //status_value 0 means (not read)
+                    $data_param = array(
+                        'name' => $name,
+                        'email' => $email,
+                        'comment' => $message,
+                        'subject' => $subject,
+                        'date_comment' => date("Y-m-d H:i:s"),
+                        'status_value' => 1,
+                    );
+                    $comment_id = $this->obj_comments->insert($data_param);
+                    if ($comment_id != null) {
+                        $data['status'] = true;
+                        //enviar mensaje de confirmación al correo
+//                    $this->message($name, $email, $subject, $message);
+                    } else {
+                        $data['status'] = false;
+                    }
+                } else {
+                    $data['status'] = "false2";
+                }
             }
             echo json_encode($data);
             exit();
-        }
+//        }
     }
 
     public function message($name, $email, $subject, $message) {
@@ -100,21 +109,6 @@ class Contact extends CI_Controller {
                                               <a href='https://evolucionweb.tech/dashboard' style='background:#2d6ced;color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:14px;display:inline-block;padding:12px 17px;text-decoration:none;border-radius:5px'
                                                 target='_blank'>Iniciar Sesión - Dashboard</a>                          
                                               </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td style='padding:30px 30px 0;display:block;background:#fafafa'>
-                                      <table style='width:100%;border-collapse:collapse;padding:0;text-align:center' width='100%' height='100%' cellspacing='0' cellpadding='0'
-                                        border='0' align='center'>
-                                        <tbody>
-                                          <tr>
-                                            <td style='max-width:290px;display:inline-block;padding:0 19px 30px;box-sizing:border-box;text-align:left'>
-                                              <p style='margin:0;text-align:center;line-height:20px;color:#888888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-size:12px'>
-                                              Visítanos en  <a href='https://u-linex.com' style='color:#2d6ced;text-decoration:none' target='_blank'>www.u-linex.com</a></p>
-                                            </td>
                                           </tr>
                                         </tbody>
                                       </table>

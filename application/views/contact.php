@@ -88,32 +88,27 @@
         <div class="col-md-7 col-lg-8">
           <h4 class="heading-decorated">Mantente en contacto</h4>
           <!-- RD Mailform-->
-          <form class="rd-mailform rd-mailform_style-1 form-shadow" method="post" onsubmit="send_message();">
+          <form class="rd-mailform_style-1 form-shadow" method="post" onsubmit="send_message();" id="contactForm" action="javascript:void(0);">
             <div class="form-wrap form-wrap_icon">
-                <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required"> 
+                <input class="form-input" id="contact-name" type="text" name="name" required=""> 
                 <label class="form-label" for="contact-name">Tu Nombre</label>              
             </div>
             <div class="form-wrap form-wrap_icon"> 
-                <input class="form-input" id="contact-subject" type="text" name="subject" data-constraints="@Required"> 
+                <input class="form-input" id="contact-subject" type="text" name="subject" required=""> 
                 <label class="form-label" for="contact-subject">Asunto</label>              
             </div>
             <div class="form-wrap form-wrap_icon"> 
-                <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required"> 
+                <input class="form-input" id="contact-email" type="email" name="email" required=""> 
                 <label class="form-label" for="contact-email">Tu Email</label>              
             </div>
             <div class="form-wrap form-wrap_icon"> 
-                <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea> 
+                <textarea class="form-input" id="contact-message" name="message" required=""></textarea> 
                 <label class="form-label" for="contact-message">Tu Mensaje</label>              
             </div> 
             <div class="row">
-              <div class="col">
-                    <div class="g-recaptcha" data-sitekey="6Lc67ecUAAAAACsHd6dEfMsbhVAXWy4CCNwZFh3j"></div>
-              </div>
-                <div class="col">
-                    <div id="respose"></div>
-              </div>
             </div>
-            <button class="button button-primary button-shadow" type="submit">Enviar Mensaje</button> 
+              <input type="hidden" name="google-response-token" id="google-response-token">
+              <button class="button button-primary button-shadow" type="submit" id="contac_boton">Enviar Mensaje</button> 
           </form>
         </div>
       </div>
@@ -122,14 +117,17 @@
  <!-- Page Footer -->
      <?php $this->load->view("footer");?>
     </div>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LcXUs8ZAAAAAFopvPWskPOdBF1HjbzymBjnq7tS'></script>
+        <script type="text/javascript">
+                                        grecaptcha.ready(function () {
+                                            grecaptcha.execute('6LcXUs8ZAAAAAFopvPWskPOdBF1HjbzymBjnq7tS', {action: 'homepage'})
+                                                    .then(function (token) {
+                                                        $('#google-response-token').val(token);
+                                                    });
+                                        });
+        </script>
     <script src="<?php echo site_url().'static/page_front/js/core.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/script.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
-<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');
-</script>
-<!-- End Google Tag Manager -->
 </html>

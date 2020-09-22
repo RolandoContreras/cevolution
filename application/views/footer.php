@@ -21,17 +21,17 @@
         page_id="852385984921100"
   theme_color="#6699cc">
       </div>
-<section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+<section class="pre-footer-corporate text-white bg-overlay-darkest">
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-4">
-              <h6>Acerca</h6>
+              <h6 class="text-white">Acerca</h6>
               <p>Somos una agencia digital que nos especializamos en crear y posicionar marcas trabajando con los mejores profesionales del medio y de esta forma dando vida a tus sueños.</p>
               <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo" width="250"/>
             </div>
             
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
-              <h6>Servicios</h6>
+                <h6 class="text-white">Servicios</h6>
               <ul class="list-xxs">
                 <li><a href="#" class="color-white">Software a Medida</a></li>
                 <li><a href="#" class="color-white">Software Multinivel</a></li>
@@ -42,7 +42,7 @@
             </div>
               
             <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-              <h6>Contacto</h6>
+              <h6 class="text-white">Contacto</h6>
               <ul class="list-xs">
                 <li>
                   <dl class="list-terms-minimal color-white">
@@ -76,7 +76,7 @@
               </ul>
             </div>
               <div class="col-sm-10 col-md-6 col-lg-3 col-xl-2">
-              <h6>Mapa</h6>
+              <h6 class="text-white">Mapa</h6>
               <ul class="list-xxs">
                 <li><a class="color-white" href="<?php echo site_url();?>">Inicio</a></li>
                 <li><a class="color-white" href="<?php echo site_url().'demo';?>">DEMO</a></li>

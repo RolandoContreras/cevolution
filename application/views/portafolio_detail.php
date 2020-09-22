@@ -52,43 +52,43 @@
                         <!-- Slick Carousel-->
                         <div class="slick-slider carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel" data-lightgallery="group">
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img1"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img1"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img2"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img2"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img3"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img3"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img4"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img4"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img5"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img5"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img6"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="1200" height="800"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img6"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="1200" height="800"/>
                             </div>
                         </div>
                         <!--//tumbail-->
                         <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="3" data-xs-items="3" data-sm-items="4" data-md-items="5" data-lg-items="6" data-xl-items="8" data-slide-to-scroll="1">
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img1"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img1"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img2"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img2"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img3"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img3"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img4"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img4"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img5"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img5"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                             <div class="item">
-                                <img src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img6"; ?>' alt="<?php echo $obj_portafolio->name; ?>" width="168" height="112"/>
+                                <img data-src='<?php echo site_url() . "static/cms/img/portafolio/$obj_portafolio->portafolio_id/$obj_portafolio->img6"; ?>' alt="<?php echo $obj_portafolio->name; ?>" class="lazyload" width="168" height="112"/>
                             </div>
                         </div>
                     </div>
@@ -100,6 +100,7 @@
         <!-- Global Mailform Output-->
         <div class="snackbars" id="form-output-global"></div>
         <!-- Javascript-->
+        <script src="<?php echo site_url() . 'static/page_front/js/seo/lazysizes.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/core.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/script.js'; ?>"></script>
     </body>

@@ -325,7 +325,7 @@
             <!--faq-->
             <section class="section-md bg-default"> 
                 <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}" style="transform:translate3d(-100px, -30px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(-100px, -30px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                    <img src="<?php echo site_url() . "static/page_front/images/bg-decor-9.png"; ?>" alt="Preguntas frecuentes">
+                    <img data-src="<?php echo site_url() . "static/page_front/images/bg-decor-9.png"; ?>" class="lazyload" alt="Preguntas frecuentes">
                 </div>
                 <div class="container">
                     <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center">
@@ -430,7 +430,7 @@
                         </div>
                         <div class="col-md-7 col-lg-5">
                             <figure class="button-shadow">
-                                <img src="<?php echo site_url() . "static/page_front/images/faq.jpg" ?>" alt="Preguntas Frecuentes" width="555" height="800">
+                                <img data-src="<?php echo site_url() . "static/page_front/images/faq.jpg" ?>" class="lazyload" alt="Preguntas Frecuentes" width="555" height="800">
                             </figure>
                         </div>
                     </div>
@@ -443,6 +443,7 @@
         <!-- Global Mailform Output-->
         <div class="snackbars" id="form-output-global"></div>
         <!-- Javascript-->
+        <script src="<?php echo site_url() . 'static/page_front/js/seo/lazysizes.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/core.min.js'; ?>"></script>
         <script src="<?php echo site_url() . 'static/page_front/js/script.js'; ?>"></script>
     </body>

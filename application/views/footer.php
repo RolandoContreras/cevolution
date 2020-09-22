@@ -27,7 +27,7 @@
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-4">
               <h6 class="text-white">Acerca</h6>
               <p>Somos una agencia digital que nos especializamos en crear y posicionar marcas trabajando con los mejores profesionales del medio y de esta forma dando vida a tus sueños.</p>
-              <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo" width="250"/>
+              <img data-src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" class="lazyload" alt="logo" width="250"/>
             </div>
             
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">

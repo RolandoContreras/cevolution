@@ -376,13 +376,13 @@
                                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_2">
                                         <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "static/backoffice/img/diseños/$value->img_2"; ?>" data-lightgallery="item">
                                             <figure>
-                                                <img data-src="<?php echo site_url() . "static/backoffice/img/diseños/$value->img"; ?>" class="lazyload" alt="<?php echo $value->name; ?>"/>
+                                                <img src="<?php echo site_url() . "static/backoffice/img/diseños/$value->img"; ?>" alt="<?php echo $value->name; ?>"/>
                                             </figure>
                                             <div class="caption">
                                                 <span class="icon lnr lnr-picture"></span>
                                                 <p class="heading-5 hover-top-element"><?php echo $value->name; ?></p>
                                                 <div class="divider"></div>
-                                                <p class="small hover-bottom-element">VVisualiza la imagen completa.</p>
+                                                <p class="small hover-bottom-element">Visualiza la imagen completa.</p>
                                                 <span class="icon lnr lnr-select"></span>
                                             </div>
                                         </a>
@@ -391,7 +391,7 @@
                                 <?php foreach ($obj_portafolio as $value) { ?>
                                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category_1" style="position: absolute; left: 0px; top: 0px;">
                                         <a class="img-thumbnail-variant-3" href="<?php echo site_url() . "portafolio/$value->category_slug/$value->slug"; ?>">
-                                            <img data-src="<?php echo site_url() . "static/cms/img/portafolio/$value->portafolio_id/$value->img1"; ?>" alt="<?php echo $value->name; ?>" class="lazyload" width="418" height="315">
+                                            <img src="<?php echo site_url() . "static/cms/img/portafolio/$value->portafolio_id/$value->img1"; ?>" alt="<?php echo $value->name; ?>" width="418" height="315">
                                             <span class="label-custom label-white">Enlace</span>
                                             <div class="caption">
                                                 <span class="icon hover-top-element linear-icon-folder-picture"></span>

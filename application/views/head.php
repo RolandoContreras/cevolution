@@ -30,7 +30,7 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/bootstrap.css';?>" media="none" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/style.css';?>" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/style.css';?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/font.css';?>" media="none" onload="if(media!='all')media='all'">
     <!--mi stylo-->
     <link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/my_style.css';?>" media="none" onload="if(media!='all')media='all'">
